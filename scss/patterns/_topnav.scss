@@ -1,0 +1,85 @@
+/*********************
+        NAVBAR
+*********************/
+.nav-body {
+    padding-top: 85px;
+}
+
+
+.nav-header {
+    border-bottom: 1px solid #CCCCCC;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-up {
+    top: -85px;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+    box-shadow: none;
+  .navbar-brand {
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover, &:focus { 
+      color: #00a651; }}
+  .navbar-text {
+    // color: $colDefault; 
+  }
+  .navbar-nav {
+    > li {
+      > a {
+        color: #000000;
+        font-weight: normal;
+        cursor: pointer;
+        &:hover,  &:focus {
+          color: #00a651;
+          text-decoration: none; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: #555; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        // color: $colHighlight;
+        // background-color: $bgHighlight; 
+        }}
+  .evo-button-smaller {
+     margin-top: -10px; }}
+
+  .navbar-toggle {
+    background: none;
+    border: none;
+    &:hover, &:focus {
+      background: none;
+      border: none; }
+    .icon-bar {
+      // background-color: $black_evo; 
+      }}
+  // .navbar-collapse,
+  // .navbar-form {
+  //   border-color: $colDefault; }
+  // .navbar-link {
+  //   color: $colDefault;
+  //   &:hover {
+  //     color: $colHighlight; }}
+    }
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      // color: $colDefault;
+      &:hover, &:focus {
+        // color: $colHighlight; 
+        }}
+    > .active {
+      > a, > a:hover, > a:focus, {
+        // color: $colHighlight;
+        // background-color: $bgHighlight; 
+        }}}
+}
