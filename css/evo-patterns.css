@@ -155,7 +155,8 @@ a.control_prev, a.control_next {
   -webkit-transition: all 0.2s ease;
 }*/
 a.control_prev {
-  border-radius: 0 2px 2px 0; }
+  border-radius: 0 2px 2px 0;
+  top: 42%; }
 
 a.control_next {
   right: 0;
