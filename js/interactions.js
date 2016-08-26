@@ -6,8 +6,8 @@ $('#evo-fade-1-run').click(function() {
 });
 
 
-$('#evo-slide-1-run').click(function() {
-   $('div.evo-slide-1').hide().each(function (i) {
+$('#evo-swipe-1-run').click(function() {
+   $('div.evo-swipe-1').hide().each(function (i) {
       var step = $(this);
       setTimeout(function () {
           step.slideDown(1500);
@@ -28,6 +28,6 @@ $("#view_code_fade").click(function(){
 });
 
 
-$("#view_code_slide").click(function(){
-    $("#toggle_code_slide").slideToggle();
+$("#view_code_swipe").click(function(){
+    $("#toggle_code_swipe").slideToggle();
 });
