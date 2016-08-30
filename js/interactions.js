@@ -31,3 +31,39 @@ $("#view_code_fade").click(function(){
 $("#view_code_swipe").click(function(){
     $("#toggle_code_swipe").slideToggle();
 });
+
+$("#view_code_1").click(function(){
+    $("#toggle_code_1").slideToggle();
+});
+
+$("#view_code_2").click(function(){
+    $("#toggle_code_2").slideToggle();
+});
+
+$("#view_code_3").click(function(){
+    $("#toggle_code_3").slideToggle();
+});
+
+$("#view_code_4").click(function(){
+    $("#toggle_code_4").slideToggle();
+});
+
+$("#view_code_5").click(function(){
+    $("#toggle_code_5").slideToggle();
+});
+
+$("#view_code_6").click(function(){
+    $("#toggle_code_6").slideToggle();
+});
+
+$("#view_code_7").click(function(){
+    $("#toggle_code_7").slideToggle();
+});
+
+$("#view_code_8").click(function(){
+    $("#toggle_code_8").slideToggle();
+});
+
+$("#view_code_9").click(function(){
+    $("#toggle_code_9").slideToggle();
+});
