@@ -32,7 +32,6 @@ $("#view_code_swipe").click(function(){
     $("#toggle_code_swipe").slideToggle();
 });
 
-
 $("#view_code_1").click(function(){
     $("#toggle_code_1").slideToggle();
 });
