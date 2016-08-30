@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="../css/evo-icons.min.css"> 
         <link rel="stylesheet" href="../css/evo-patterns.min.css">
         <link rel="stylesheet" href="../css/icons-gray.css">
-        <link rel="stylesheet" href="../css/icon-hover.css">
+        <link rel="stylesheet" href="../css/icons-hover.css">
         <link rel="stylesheet" href="../css/main.css">
 
     </head>
@@ -120,15 +120,35 @@
 
 <!-- END GRIDS -->
 
+<!-- begin code snippet -->
+ <div class="row">
+  <div class="col-xs-12">
+      <a href="javascript: void(0);" id="view_code_1">
+        <span class="evo-button-5-caps view-hide">view code</span> 
+      </a> 
+  </div>
+</div>
+
+
+  <div class="row" id="toggle_code_1" style="display: none;">
+    <div class="evo-space-15"></div>
+    <div id="evo-grid-1-code" class="col-xs-12">
+        <style type="text/css">.gist-data {max-height: 400px;}</style>
+          <script src="https://gist.github.com/pdickan/89df6d56a78d688ed8e0a7fd9913662b.js"></script>
+    </div>
+  </div>
+
+ <div class="row">
+  <div class="col-xs-12">
+    <div class="evo-space"></div>
+  </div>
+</div>
+<!-- end code snippet -->
 
 
 </main>
 
-
   </div> 
-
-<div class="evo-space-big"></div>
-
 </div> <!-- container -->
 
 
@@ -136,9 +156,14 @@
 
 <div class="container">
 
-    <div class="evo-space-15"></div>
-      <div class="evo-header-10 evo-no-line">Full Width iFrame</div>
-    <div class="evo-space-5"></div>
+<div class="evo-line-1 evo-gray-15"></div>
+  <div class="row">
+    <div id="evo-grid-1-a" class="col-xs-12">
+        <div class="evo-space-15"></div>
+          <div class="evo-header-10 evo-no-line">Full Width iFrame</div>
+        <div class="evo-space-5"></div>
+    </div>
+  </div>
 
 </div>
 
@@ -149,18 +174,31 @@
 
 
   <div class="container">
-    <div class="row">
+<!-- begin code snippet -->
+<div class="evo-space-15"></div>
+ <div class="row">
+  <div class="col-xs-12">
+      <a href="javascript: void(0);" id="view_code_2">
+        <span class="evo-button-5-caps view-hide">view code</span> 
+      </a> 
+  </div>
+</div>
 
-      <div class="col-xs-12">
-          <div class="evo-space-15"></div>
-            <div class="evo-header-10 evo-no-line">Code snippet for iFrame</div>
-          <div class="evo-space-5"></div>
-          <style type="text/css">.gist-data {max-height: 500px;}</style>
-          <!-- <script src="https://gist.github.com/jdickan/ecd144c2976948e7c3209ac7d9dec01b.js"></script> -->
-        <div class="evo-space-biggest"></div>
-        
-      </div>
+
+  <div class="row" id="toggle_code_2" style="display: none;">
+    <div class="evo-space-15"></div>
+    <div id="evo-grid-1-code" class="col-xs-12">
+        <style type="text/css">.gist-data {max-height: 400px;}</style>
+          <script src="https://gist.github.com/pdickan/8ab55c7ec9ab1916a64ba0090cb59523.js"></script>
     </div>
+  </div>
+
+ <div class="row">
+  <div class="col-xs-12">
+    <div class="evo-space"></div>
+  </div>
+</div>
+<!-- end code snippet -->
 
     <div class="row">
       <div class="hidden-xs col-sm-12">
@@ -222,15 +260,18 @@
 </html>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/interactions.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
