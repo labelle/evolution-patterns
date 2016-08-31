@@ -20,6 +20,16 @@
     top: -85px;
 }
 
+
+.nav-link {
+  padding-right: 1em !important;
+}
+
+.nav-button {
+  padding-right: 0 !important;
+}
+
+
 .navbar-default {
     background: none;
     border: none;
@@ -29,7 +39,7 @@
     font-weight: bold;
     text-transform: uppercase;
     &:hover, &:focus { 
-      color: #00a651; }}
+      color: #7F7F7F; }}
   .navbar-text {
     // color: $colDefault; 
   }
@@ -40,7 +50,7 @@
         font-weight: normal;
         cursor: pointer;
         &:hover,  &:focus {
-          color: #00a651;
+          color: #7F7F7F;
           text-decoration: none; }}}
     > .active {
       > a, > a:hover, > a:focus {
