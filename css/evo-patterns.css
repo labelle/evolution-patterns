@@ -38,6 +38,12 @@ LAYOUT & GRID STYLES
 .nav-up {
   top: -85px; }
 
+.nav-link {
+  padding-right: 1em !important; }
+
+.nav-button {
+  padding-right: 0 !important; }
+
 .navbar-default {
   background: none;
   border: none;
@@ -47,13 +53,13 @@ LAYOUT & GRID STYLES
     font-weight: bold;
     text-transform: uppercase; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #00a651; }
+      color: #7F7F7F; }
   .navbar-default .navbar-nav > li > a {
     color: #000000;
     font-weight: normal;
     cursor: pointer; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-      color: #00a651;
+      color: #7F7F7F;
       text-decoration: none; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #555; }
@@ -228,3 +234,16 @@ a.control_next {
     -moz-column-count: 6;
     -webkit-column-count: 6;
     column-count: 6; } }
+
+.btn-social {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 60px; }

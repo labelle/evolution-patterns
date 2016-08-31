@@ -3,137 +3,123 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="400px" height="200px" viewBox="0 0 400 200" enable-background="new 0 0 400 200" xml:space="preserve">
-<title>Group 4</title>
-<desc>Created with Sketch.</desc>
-<title>Group 4</title>
-<desc>Created with Sketch.</desc>
-<g opacity="0.5" enable-background="new    ">
+<g>
 	<g>
-		<defs>
-			<rect id="SVGID_1_" x="60" y="111" width="110" height="44"/>
-		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  overflow="visible"/>
-		</clipPath>
-		<g clip-path="url(#SVGID_2_)">
-			<defs>
-				<rect id="SVGID_3_" x="60" y="111" width="110" height="44"/>
-			</defs>
-			<clipPath id="SVGID_4_">
-				<use xlink:href="#SVGID_3_"  overflow="visible"/>
-			</clipPath>
-			<g clip-path="url(#SVGID_4_)">
-				<defs>
-					<rect id="SVGID_5_" x="60" y="111" width="110" height="44"/>
-				</defs>
-				<clipPath id="SVGID_6_">
-					<use xlink:href="#SVGID_5_"  overflow="visible"/>
-				</clipPath>
-				
-					<rect x="60" y="111" clip-path="url(#SVGID_6_)" fill="none" stroke="#00AEEF" stroke-width="2" stroke-miterlimit="10" width="110" height="44"/>
+		<g>
+			<g>
+				<g>
+					<g opacity="0.5" enable-background="new    ">
+						<g>
+							<g>
+								<g>
+									<g>
+										
+											<rect x="2" y="112.977" fill="none" stroke="#00AEEF" stroke-width="2" stroke-miterlimit="10" width="129.769" height="51.908"/>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					
+						<text transform="matrix(1 0 0 1 24.0693 149.0605)" fill="#00BCF2" font-family="'HelveticaNeue-Bold'" font-size="27.4284" letter-spacing="-1">ENTE</text>
+					<text transform="matrix(1 0 0 1 91.103 149.0605)" fill="#00BCF2" font-family="'HelveticaNeue-Bold'" font-size="27.4284">R</text>
+					<g>
+						<g>
+							<g>
+								<g>
+									<g>
+										<g opacity="0.5" enable-background="new    ">
+											<g>
+												<g>
+													<g>
+														<g>
+															
+																<rect x="184.856" y="35.116" fill="none" stroke="#00AEEF" stroke-width="2" stroke-miterlimit="10" width="119.151" height="51.907"/>
+														</g>
+													</g>
+												</g>
+											</g>
+										</g>
+										
+											<text transform="matrix(1 0 0 1 206.0381 71.1987)" fill="#00BCF2" font-family="'HelveticaNeue-Bold'" font-size="27.4284" letter-spacing="-1">nex</text>
+										
+											<text transform="matrix(1 0 0 1 248.5791 71.1987)" fill="#00BCF2" font-family="'HelveticaNeue-Bold'" font-size="27.4284">t</text>
+										<polyline fill="none" stroke="#00AEEF" stroke-width="2.25" stroke-miterlimit="10" points="270.468,52.12 
+											280.825,61.251 270.468,70.382 										"/>
+										<g>
+											<g>
+												<g>
+													<g>
+														<g>
+															<g opacity="0.5" enable-background="new    ">
+																<g>
+																	<g>
+																		<g>
+																			<g>
+																				
+																					<rect x="2" y="35.116" fill="none" stroke="#00AEEF" stroke-width="2" stroke-miterlimit="10" width="155.723" height="51.907"/>
+																			</g>
+																		</g>
+																	</g>
+																</g>
+															</g>
+															
+																<text transform="matrix(1 0 0 1 25.8892 70.0186)" fill="#00BCF2" font-family="'HelveticaNeue'" font-size="27.4284">subm</text>
+															
+																<text transform="matrix(1 0 0 1 88.9194 70.0186)" fill="#00BCF2" font-family="'HelveticaNeue'" font-size="27.4284">i</text>
+															
+																<text transform="matrix(1 0 0 1 93.5259 70.0186)" fill="#00BCF2" font-family="'HelveticaNeue'" font-size="27.4284">t</text>
+															<polyline fill="none" stroke="#00AEEF" stroke-width="2.25" stroke-miterlimit="10" points="116.138,61.571 
+																122.285,69.729 135.058,53.015 															"/>
+															<g>
+																<g>
+																	<g>
+																		<g>
+																			<g>
+																				<g opacity="0.5" enable-background="new    ">
+																					<g>
+																						<g>
+																							<g>
+																								<g>
+																									
+																										<rect x="158.902" y="112.977" fill="none" stroke="#00AEEF" stroke-width="2" stroke-miterlimit="10" width="174.598" height="51.908"/>
+																								</g>
+																							</g>
+																						</g>
+																					</g>
+																				</g>
+																				
+																					<text transform="matrix(1 0 0 1 218.2832 147.8809)" fill="#00BCF2" font-family="'HelveticaNeue'" font-size="27.4284">TRASH</text>
+																				<polygon fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" points="186.883,139.447 
+																					186.883,132.131 201.638,132.131 201.638,149.053 186.883,149.053 																				"/>
+																				
+																					<line fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" x1="184.161" y1="131.771" x2="204.36" y2="131.771"/>
+																				<polyline fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" points="198.25,132.242 
+																					197.401,128.902 191.122,128.902 190.271,132.242 																				"/>
+																				
+																					<line fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" x1="190.809" y1="135.441" x2="190.809" y2="145.318"/>
+																				
+																					<line fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" x1="194.354" y1="135.441" x2="194.354" y2="145.318"/>
+																				
+																					<line fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" x1="197.9" y1="135.441" x2="197.9" y2="145.318"/>
+																			</g>
+																		</g>
+																	</g>
+																</g>
+															</g>
+														</g>
+													</g>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
 			</g>
 		</g>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 78.7075 141.5859)"><tspan x="0" y="0" fill="#00BCF2" font-family="'HelveticaNeue-Bold'" font-size="23.25" letter-spacing="-1">ENTE</tspan><tspan x="56.822" y="0" fill="#00BCF2" font-family="'HelveticaNeue-Bold'" font-size="23.25">R</tspan></text>
-<g opacity="0.5" enable-background="new    ">
-	<g>
-		<defs>
-			<rect id="SVGID_7_" x="215" y="45" width="101" height="44"/>
-		</defs>
-		<clipPath id="SVGID_8_">
-			<use xlink:href="#SVGID_7_"  overflow="visible"/>
-		</clipPath>
-		<g clip-path="url(#SVGID_8_)">
-			<defs>
-				<rect id="SVGID_9_" x="215" y="45" width="101" height="44"/>
-			</defs>
-			<clipPath id="SVGID_10_">
-				<use xlink:href="#SVGID_9_"  overflow="visible"/>
-			</clipPath>
-			<g clip-path="url(#SVGID_10_)">
-				<defs>
-					<rect id="SVGID_11_" x="215" y="45" width="101" height="44"/>
-				</defs>
-				<clipPath id="SVGID_12_">
-					<use xlink:href="#SVGID_11_"  overflow="visible"/>
-				</clipPath>
-				
-					<rect x="215" y="45" clip-path="url(#SVGID_12_)" fill="none" stroke="#00AEEF" stroke-width="2" stroke-miterlimit="10" width="101" height="44"/>
-			</g>
-		</g>
-	</g>
-</g>
-<text transform="matrix(1 0 0 1 232.9551 75.5859)"><tspan x="0" y="0" fill="#00BCF2" font-family="'HelveticaNeue-Bold'" font-size="23.25" letter-spacing="-1">nex</tspan><tspan x="36.061" y="0" fill="#00BCF2" font-family="'HelveticaNeue-Bold'" font-size="23.25">t</tspan></text>
-<polyline fill="none" stroke="#00AEEF" stroke-width="2.25" stroke-miterlimit="10" points="287.57,59.414 296.35,67.154 
-	287.57,74.894 "/>
-<g opacity="0.5" enable-background="new    ">
-	<g>
-		<defs>
-			<rect id="SVGID_13_" x="60" y="45" width="132" height="44"/>
-		</defs>
-		<clipPath id="SVGID_14_">
-			<use xlink:href="#SVGID_13_"  overflow="visible"/>
-		</clipPath>
-		<g clip-path="url(#SVGID_14_)">
-			<defs>
-				<rect id="SVGID_15_" x="60" y="45" width="132" height="44"/>
-			</defs>
-			<clipPath id="SVGID_16_">
-				<use xlink:href="#SVGID_15_"  overflow="visible"/>
-			</clipPath>
-			<g clip-path="url(#SVGID_16_)">
-				<defs>
-					<rect id="SVGID_17_" x="60" y="45" width="132" height="44"/>
-				</defs>
-				<clipPath id="SVGID_18_">
-					<use xlink:href="#SVGID_17_"  overflow="visible"/>
-				</clipPath>
-				
-					<rect x="60" y="45" clip-path="url(#SVGID_18_)" fill="none" stroke="#00AEEF" stroke-width="2" stroke-miterlimit="10" width="132" height="44"/>
-			</g>
-		</g>
-	</g>
-</g>
-<text transform="matrix(1 0 0 1 80.25 74.5859)"><tspan x="0" y="0" fill="#00BCF2" font-family="'HelveticaNeue'" font-size="23.25" letter-spacing="-1">subm</tspan><tspan x="53.428" y="0" fill="#00BCF2" font-family="'HelveticaNeue'" font-size="23.25">i</tspan></text>
-<text transform="matrix(1 0 0 1 137.583 74.5859)" fill="#00BCF2" font-family="'HelveticaNeue'" font-size="23.25">t</text>
-<polyline fill="none" stroke="#00AEEF" stroke-width="2.25" stroke-miterlimit="10" points="156.75,67.425 161.961,74.34 
-	172.788,60.173 "/>
-<g opacity="0.5" enable-background="new    ">
-	<g>
-		<defs>
-			<rect id="SVGID_19_" x="193" y="111" width="148" height="44"/>
-		</defs>
-		<clipPath id="SVGID_20_">
-			<use xlink:href="#SVGID_19_"  overflow="visible"/>
-		</clipPath>
-		<g clip-path="url(#SVGID_20_)">
-			<defs>
-				<rect id="SVGID_21_" x="193" y="111" width="148" height="44"/>
-			</defs>
-			<clipPath id="SVGID_22_">
-				<use xlink:href="#SVGID_21_"  overflow="visible"/>
-			</clipPath>
-			<g clip-path="url(#SVGID_22_)">
-				<defs>
-					<rect id="SVGID_23_" x="193" y="111" width="148" height="44"/>
-				</defs>
-				<clipPath id="SVGID_24_">
-					<use xlink:href="#SVGID_23_"  overflow="visible"/>
-				</clipPath>
-				
-					<rect x="193" y="111" clip-path="url(#SVGID_24_)" fill="none" stroke="#00AEEF" stroke-width="2" stroke-miterlimit="10" width="148" height="44"/>
-			</g>
-		</g>
-	</g>
-</g>
-<text transform="matrix(1 0 0 1 243.335 140.5859)" fill="#00BCF2" font-family="'HelveticaNeue'" font-size="23.25">TRASH</text>
-<polygon fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" points="216.719,133.437 216.719,127.237 
-	229.225,127.237 229.225,141.58 216.719,141.58 "/>
-<line fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" x1="214.411" y1="126.931" x2="231.533" y2="126.931"/>
-<polyline fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" points="226.353,127.33 225.634,124.5 
-	220.311,124.5 219.59,127.33 "/>
-<line fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" x1="220.046" y1="130.042" x2="220.046" y2="138.415"/>
-<line fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" x1="223.051" y1="130.042" x2="223.051" y2="138.415"/>
-<line fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-miterlimit="10" x1="226.056" y1="130.042" x2="226.056" y2="138.415"/>
 </svg>
