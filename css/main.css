@@ -426,6 +426,9 @@ Image toggle in templates/images.html file
 .monolake-img {
   background-image: url("../img/monolake.jpg"); }
 
+.monolake-scroll-img {
+  background-image: url("../img/monolake.jpg"); }  
+
 /***********************************
 Toggle space outlines in templates/spacers.html file
 ***********************************/
