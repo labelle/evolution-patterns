@@ -164,3 +164,70 @@ $(document).ready(function() {
 
 
 });
+
+
+
+
+// ----------------------------------------------------------------
+// Isotope Portfolio Grid / Filtering functionality
+// ----------------------------------------------------------------
+$(function () {
+    "use strict";
+
+    $(document).ready(function () {
+        int_isotopPortfolio();
+    });
+
+    $(window).load(function () {
+        int_isotopPortfolio();
+
+        // Site Preloader
+        $('#preloader').fadeOut('slow', function () {
+            $(this).remove();
+        });
+
+    });
+
+    function int_isotopPortfolio() {
+
+        // Portfolio Grid
+        var $container = $('.portfolio-grid');
+
+        var layout_mode;
+        if ($container.hasClass("masonry")) {
+            layout_mode = "masonry";
+        } else {
+            layout_mode = "fitRows"
+        }
+
+
+        $container.isotope({
+            itemSelector: '.portfolio-item',
+            layoutMode: layout_mode,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        })
+
+
+        // bind filter button click
+        $('.portfolio-filter').on('click', '.categories', function () {
+            var filterValue = $(this).attr('data-filter');
+            $container.isotope({ filter: filterValue });
+            console.log("ok")
+        });
+
+        // change active class on categories
+        $('.categories-filter').each(function (i, buttonGroup) {
+            var $buttonGroup = $(buttonGroup);
+            $buttonGroup.on('click', '.categories', function () {
+                $buttonGroup.find('.active').removeClass('active');
+                $(this).addClass('active');
+            });
+
+        });
+    };
+
+});
