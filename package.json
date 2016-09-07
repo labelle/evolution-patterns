@@ -19,5 +19,6 @@
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^1.5.4",
     "node-neat": "^1.7.2"
-  }
+  },
+  "dependencies": {}
 }
