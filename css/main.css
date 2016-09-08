@@ -814,8 +814,8 @@ hamburger translating from touch.less file
   cursor: pointer;
   float: right; }
 
-.active {
-  color: red; }
+/*.active {
+  color: red; }*/
 
 /***************************************
 fullscreen bg video media query part

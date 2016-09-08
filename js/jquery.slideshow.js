@@ -50,7 +50,7 @@ $(function(){
   jQuery('#html5video').maximage('maxcover');
   
   // To show it is dynamic html text
-  jQuery('.in-slide-content').delay(1200).fadeIn();
+  jQuery('.in-slide-content').delay(900).fadeIn();
 });
 
 
