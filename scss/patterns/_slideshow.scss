@@ -138,7 +138,14 @@ div.mc-image {
 
 
 /* Other random styles */
-#arrow_left, #arrow_right, {text-decoration:none;}
+#arrow_left, 
+#arrow_right {
+  text-decoration:none;
+  // position: absolute;
+}
+
+
+
 a {color:#fff;}
 a:hover {text-decoration:none;}
 a:active {color:#999;}

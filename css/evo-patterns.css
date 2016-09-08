@@ -78,12 +78,12 @@ LAYOUT & GRID STYLES
 IMAGE STYLES
 *********************/
 .full-screen-img {
+  position: relative;
   background: url(../../img/monolake.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  min-height: 100vh; }
+  background-size: cover; }
 
 /***************************
 VIDEO AND TEXT ABOVE STYLES
@@ -235,7 +235,8 @@ div.mc-image {
   position: relative !important; }
 
 /* Other random styles */
-#arrow_left, #arrow_right {
+#arrow_left,
+#arrow_right {
   text-decoration: none; }
 
 a {
@@ -440,10 +441,7 @@ p {
 
 .portfolio-filter li a {
   display: block;
-  color: #222;
-  font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+  color: black;
   margin-left: 11px;
   margin-right: 11px;
   text-transform: uppercase; }
@@ -452,7 +450,7 @@ p {
   font-weight: bold; }
 
 .portfolio-filter li a:hover {
-  color: #7F7F7F; }
+  color: #7f7f7f; }
 
 /* Portfolio Single Page */
 #portfolio-single .portfolio-image-wrap {
