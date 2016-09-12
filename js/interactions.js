@@ -74,6 +74,14 @@ $("#view_code_9").click(function(){
     $("#toggle_code_9").slideToggle();
 });
 
+$("#view_code_10").click(function(){
+    $("#toggle_code_10").slideToggle();
+});
+
+$("#view_code_11").click(function(){
+    $("#toggle_code_11").slideToggle();
+});
+
 
 
 
