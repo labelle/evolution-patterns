@@ -82,6 +82,18 @@ $("#view_code_11").click(function(){
     $("#toggle_code_11").slideToggle();
 });
 
+$("#view_code_12").click(function(){
+    $("#toggle_code_12").slideToggle();
+});
+
+$("#view_code_13").click(function(){
+    $("#toggle_code_13").slideToggle();
+});
+
+$("#view_code_14").click(function(){
+    $("#toggle_code_14").slideToggle();
+});
+
 
 
 
