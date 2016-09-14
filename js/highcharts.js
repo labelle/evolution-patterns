@@ -1,12 +1,16 @@
 $(function () {
     $('#line-chart').highcharts({
         title: {
-            text: 'Monthly Average Temperature',
-            x: -20 //center
+            text: ''
         },
         subtitle: {
-            text: 'Source: WorldClimate.com',
-            x: -20
+            text: ''
+        },
+        exporting: {
+            enabled: false
+        },
+        credits: {
+            enabled: false
         },
         xAxis: {
             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -24,12 +28,6 @@ $(function () {
         },
         tooltip: {
             valueSuffix: '°C'
-        },
-        legend: {
-            layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'middle',
-            borderWidth: 0
         },
         series: [{
             name: 'Tokyo',
@@ -93,12 +91,6 @@ $(function () {
             },
             tooltip: {
                 valueSuffix: '°C'
-            },
-            legend: {
-                layout: 'horizontal',
-                align: 'right',
-                verticalAlign: 'bottom',
-                borderWidth: 0
             },
             series: [{
                 name: 'Credit Card',
@@ -186,6 +178,12 @@ $(function () {
             },
                exporting: {
                 enabled: false
+            },
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+                borderWidth: 0
             },
             tooltip: {
                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
@@ -322,9 +320,6 @@ $(function () {
                     }
                 }
             },
-            legend: {
-               enabled: false
-            },
             credits: {
                 enabled: false
             },
@@ -374,9 +369,6 @@ $(function () {
                     text: ''
                 }
 
-            },
-             legend: {
-                enabled: false
             },
             tooltip: {
                 headerFormat: '<b>{point.x}</b><br/>',
@@ -437,7 +429,7 @@ $(function () {
                 }
             },
 
-                        exporting: {
+            exporting: {
                 enabled: false
             },
 
@@ -445,7 +437,7 @@ $(function () {
                 min: 0
             },
 
-              credits: {
+            credits: {
                 enabled: false
             },
 
@@ -498,11 +490,8 @@ $(function () {
             subtitle: {
                 text: ''
             },
-             legend: {
-               enabled: false
-            },
 
-              credits: {
+            credits: {
                 enabled: false
             },
             exporting: {
@@ -612,11 +601,7 @@ $(function () {
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
             },
 
-             legend: {
-               enabled: false
-            },
-
-                    exporting: {
+            exporting: {
                 enabled: false
             },
 
@@ -637,7 +622,7 @@ $(function () {
 
 
 
-    // Used in highcharts.html in panel "Scater Plot"
+    // Used in highcharts.html in panel "Scatter Plot"
     Dashboard.Helpers.elementExists('.highcharts-scatter-plot', function() {
         $(this).highcharts({
             chart: {
@@ -653,10 +638,7 @@ $(function () {
             subtitle: {
                 text: ''
             },
-             legend: {
-               enabled: false
-            },
-              credits: {
+            credits: {
                 enabled: false
             },
             xAxis: {
@@ -825,7 +807,7 @@ $(function () {
             title: {
                 text: ''
             },
-             credits: {
+        credits: {
             enabled: false
         },
         exporting: {
@@ -866,3 +848,55 @@ $(function () {
             }]
         });
     });
+
+
+
+
+
+// Donut Chart
+$(function() {
+    var chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'donut-chart',
+            type: 'pie'
+        },
+        title: {
+            text: ''
+        },
+        exporting: {
+            enabled: false
+        },
+        credits: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+
+        plotOptions: {
+            pie: {
+                borderColor: '#000000',
+                innerSize: '55%'
+            },
+            showInLegend: true
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            showInLegend:true,
+            data: [{
+                name: 'IE',
+                y: 56.33,
+                color: '#00A651'
+            }, {
+                name: 'Chrome',
+                y: 24.03,
+                color: '#2E3192'
+            }, {
+                name: 'Firefox',
+                y: 10.38,
+                color: '#00AEEF'
+            }]
+        }]
+    });
+});
