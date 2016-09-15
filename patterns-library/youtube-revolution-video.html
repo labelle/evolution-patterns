@@ -12,7 +12,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/plugins/revolution-slider-settings.css">
+        <!-- REVOLUTION BANNER CSS SETTINGS -->
+        <link rel="stylesheet" href="../rs-plugin/css/settings.css" media="screen" />
         <link rel="stylesheet" href="../css/evo-normalize.min.css">
         <link rel="stylesheet" href="../css/evo-elements.min.css"> 
         <link rel="stylesheet" href="../css/evo-toolkit.min.css"> 
@@ -82,7 +83,7 @@
 
   <div class="row">
     <div class="col-xs-12">
-      <h2 class="evo-header-biggest evo-no-line">Revolution Video</h2>
+      <h2 class="evo-header-biggest evo-no-line">YouTube Revolution Video</h2>
     </div>
     <div class="evo-space-smallest"></div>
   </div>
@@ -101,7 +102,7 @@
 
 <main>
 
-<!-- BEGIN 1 Column Revolution Video-->
+<!-- BEGIN 1 Column YouTube Revolution Video-->
 
 <!-- evo-grid header -->
   <div class="row">
@@ -112,16 +113,37 @@
 
       <div class="evo-space-small"></div>
         <div class="evo-space-15"></div>
-          <div class="evo-header-10 evo-no-line">1 Column Revolution Video</div>
+          <div class="evo-header-10 evo-no-line">1 Column YouTube Revolution Video</div>
         <div class="evo-space-5"></div>
     </div>
   </div>
 
 
-<!-- begin 1 Column Revolution Video -->
+<!-- begin 1 Column YouTube Revolution Video -->
+<div class="youtube-revolution-video-container">
+  <div class="youtube-revolution-video">
+    <ul>
 
+     <li>
+       <div class="caption fade"
+           data-autoplay="true"
+           data-autoplayonlyfirsttime="true"
+           data-thumbimage="yourpath/yourimage"
+           data-nextslideatend="false"
+           data-x="130"
+           data-y="70"
+           data-speed="500"
+           data-start="10"
+           data-easing="easeOutBack">
+        <iframe src="http://www.youtube.com/embed/m3952Ft3KCo?enablejsapi=1&html5=1&hd=1&wmode=opaque&controls=1&showinfo=0;rel=0;" width="800" height="400"></iframe>
 
-<!-- end 1 Column Revolution Video -->
+        </div>
+     </li>
+
+    </ul>
+  </div>
+</div>
+<!-- end 1 Column YouTube Revolution Video -->
 
 
 <div class="col-xs-12">
@@ -142,19 +164,19 @@
     <div class="evo-space-15"></div>
     <div id="evo-grid-1-code" class="col-xs-12">
         <style type="text/css">.gist-data {max-height: 400px;}</style>  
-        <script src="https://gist.github.com/pdickan/e00df30b720de9621ef47967dda7f8d0.js"></script>
+        <script src="https://gist.github.com/pdickan/1be9fccc1126ef403c9da4a08832f7f3.js"></script>
       <div class="evo-space-15"></div>
       <div class="evo-line-1 evo-gray-15"></div>
     </div>
   </div>
 
-<!-- END 1 Column Revolution Video -->
+<!-- END 1 Column YouTube Revolution Video -->
 
 
 
 
 
-<!-- BEGIN Full Width Revolution Video -->
+<!-- BEGIN Full Width YouTube Revolution Video -->
 
 <!-- evo-grid header -->
   <div class="row">
@@ -165,7 +187,7 @@
 
       <div class="evo-space-small"></div>
         <div class="evo-space-15"></div>
-          <div class="evo-header-10 evo-no-line">Full Width Revolution Video</div>
+          <div class="evo-header-10 evo-no-line">Full Width YouTube Revolution Video</div>
         <div class="evo-space-5"></div>
     </div>
   </div>
@@ -174,9 +196,31 @@
 </div> <!-- container -->
 
 
-<!-- begin Full Width Revolution Video -->
-    <div data-type="vimeo" data-video-id="182748664"></div>
-<!-- end Full Width Revolution Video -->
+<!-- begin Full Width YouTube Revolution Video -->
+<div class="full-youtube-revolution-video-container">
+  <div class="full-youtube-revolution-video">
+    <ul>
+
+     <li>
+       <div class="caption fade fullscreenvideo"
+           data-autoplay="true"
+           data-autoplayonlyfirsttime="true"
+           data-thumbimage="yourpath/yourimage"
+           data-nextslideatend="true"
+           data-x="0"
+           data-y="0"
+           data-speed="500"
+           data-start="10"
+           data-easing="easeOutBack">
+        <iframe src="http://www.youtube.com/embed/m3952Ft3KCo?enablejsapi=1&html5=1&hd=1&wmode=opaque&controls=1&showinfo=0;rel=0;" width="100%" height="100%"></iframe>
+
+        </div>
+     </li>
+
+    </ul>
+  </div>
+</div>
+<!-- end Full Width YouTube Revolution Video -->
 
 
 <div class="container">
@@ -201,14 +245,14 @@
     <div class="evo-space-15"></div>
     <div id="evo-grid-1-code" class="col-xs-12">
         <style type="text/css">.gist-data {max-height: 400px;}</style>
-          <script src="https://gist.github.com/pdickan/29519484a1564c8395c6a749fa418b72.js"></script>
+          <script src="https://gist.github.com/pdickan/c89a562081c77f669c0314d15cadf5e6.js"></script>
       <div class="evo-space-15"></div>
       <div class="evo-line-1 evo-gray-15"></div>
     </div>
   </div>
 
 
-<!-- END Full Width Revolution Video -->
+<!-- END Full Width YouTube Revolution Video -->
 
 
 </div> <!-- container -->
@@ -279,9 +323,9 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="../js/plugins/jquery.magnific-popup.min.js"></script>
-        <script src="../js/plugins/jquery.themepunch.tools.min.js"></script>
-        <script src="../js/plugins/jquery.themepunch.revolution.min.js"></script>
+        <!-- jQuery REVOLUTION Slider  -->
+        <script src="../rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script src="../rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
         <script src="../js/revolution-slider.js"></script>
         <script src="../js/main.js"></script>
         <script src="../js/interactions.js"></script>
