@@ -60,16 +60,16 @@
 
 @media only screen and (min-width: 1100px) {
     .masonry {
-        -moz-column-count: 5;
-        -webkit-column-count: 5;
-        column-count: 5;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
     }
 }
 
 @media only screen and (min-width: 1300px) {
     .masonry {
-        -moz-column-count: 6;
-        -webkit-column-count: 6;
-        column-count: 6;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
     }
 }
