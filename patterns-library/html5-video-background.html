@@ -81,7 +81,7 @@
 
   <div class="row">
     <div class="col-xs-12">
-      <h2 class="evo-header-biggest evo-no-line">HTML5 Video</h2>
+      <h2 class="evo-header-biggest evo-no-line">HTML5 Video Background</h2>
     </div>
     <div class="evo-space-smallest"></div>
   </div>
@@ -111,7 +111,7 @@
 
 <main>
 
-<!-- BEGIN 1 Column Video -->
+<!-- BEGIN 1 Column Video Background -->
 
 <!-- evo-grid header -->
   <div class="row">
@@ -122,23 +122,30 @@
 
       <div class="evo-space-small"></div>
         <div class="evo-space-15"></div>
-          <div class="evo-header-10 evo-no-line">1 Column HTML5 Video</div>
+          <div class="evo-header-10 evo-no-line">1 Column HTML5 Video Background</div>
         <div class="evo-space-5"></div>
     </div>
   </div>
 
 
-<!-- begin 1 Column HTML5 Video -->
+<!-- begin 1 Column HTML5 Video Background -->
   <div class="video-image">
     <div class="video-container">
-      <video width="100%" autoplay controls loop poster="../img/monolake.jpg">
-        <source src="../video/video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+      <video id="movie" width="100%" controls preload loop="loop" autoplay="autoplay">
+      <!--   <source src="pr6.webm" type="video/webm; codecs=vp8,vorbis" />
+        <source src="pr6.ogv" type="video/ogg; codecs=theora,vorbis" /> -->
+        <source src="../video/video.mp4" />
+        <object type="application/x-shockwave-flash"
+          data="flowplayer-3.2.1.swf">
+          <param name="one-column" value="flowplayer-3.2.1.swf" />
+          <param name="allowfullscreen" value="true" />
+          <param name="flashvars" value="config={'clip': {'url': 'https://labelle.github.io/evolution-patterns/video/video.mp4', 'autoPlay':true, 'autoBuffering':true}}" />
+          <!-- <p>Download video as <a href="pr6.mp4">MP4</a>, <a href="pr6.webm">WebM</a>, or <a href="pr6.ogv">Ogg</a>.</p> -->
+        </object>
       </video>
-
     </div>
   </div>
-<!-- end 1 Column HTML5 Video -->
+<!-- end 1 Column HTML5 Video Background -->
 
 
 <div class="col-xs-12">
@@ -159,19 +166,19 @@
     <div class="evo-space-15"></div>
     <div id="evo-grid-1-code" class="col-xs-12">
         <style type="text/css">.gist-data {max-height: 400px;}</style>  
-        <script src="https://gist.github.com/pdickan/effdc0b577bb385dfd533105aad054fd.js"></script>
+        <script src="https://gist.github.com/pdickan/9c1f6ab3fb3a71f4445c5ecc2a10d642.js"></script>
       <div class="evo-space-15"></div>
       <div class="evo-line-1 evo-gray-15"></div>
     </div>
   </div>
 
-<!-- END 1 Column HTML5 Video -->
+<!-- END 1 Column HTML5 Video Background -->
 
 
 
 
 
-<!-- BEGIN Full Width HTML5 Video -->
+<!-- BEGIN Full Width HTML5 Video Background -->
 
 <!-- evo-grid header -->
   <div class="row">
@@ -182,7 +189,7 @@
 
       <div class="evo-space-small"></div>
         <div class="evo-space-15"></div>
-          <div class="evo-header-10 evo-no-line">Full Screen HTML5 Video</div>
+          <div class="evo-header-10 evo-no-line">Full Width HTML5 Video Background</div>
         <div class="evo-space-5"></div>
     </div>
   </div>
@@ -191,16 +198,24 @@
 </div> <!-- container -->
 
 
-<!-- begin Full Screen HTML5 Video -->
+<!-- begin Full Width HTML5 Video Background -->
   <div class="video-image">
     <div class="video-container">
-      <video width="100%" autoplay loop poster="../img/monolake.jpg">
-        <source src="../video/video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+      <video id="movie" width="100%" controls preload loop="loop" autoplay="autoplay">
+      <!--   <source src="pr6.webm" type="video/webm; codecs=vp8,vorbis" />
+        <source src="pr6.ogv" type="video/ogg; codecs=theora,vorbis" /> -->
+        <source src="../video/video.mp4" />
+        <object type="application/x-shockwave-flash"
+          data="flowplayer-3.2.1.swf">
+          <param name="full-width" value="flowplayer-3.2.1.swf" />
+          <param name="allowfullscreen" value="true" />
+          <param name="flashvars" value="config={'clip': {'url': 'https://labelle.github.io/evolution-patterns/video/video.mp4', 'autoPlay':true, 'autoBuffering':true}}" />
+          <!-- <p>Download video as <a href="pr6.mp4">MP4</a>, <a href="pr6.webm">WebM</a>, or <a href="pr6.ogv">Ogg</a>.</p> -->
+        </object>
       </video>
     </div>
   </div>
-<!-- end Full Screen HTML5 Video -->
+<!-- end Full Width HTML5 Video Background -->
 
 
 <div class="container">
@@ -225,14 +240,14 @@
     <div class="evo-space-15"></div>
     <div id="evo-grid-1-code" class="col-xs-12">
         <style type="text/css">.gist-data {max-height: 400px;}</style>
-          <script src="https://gist.github.com/pdickan/afe6ff5ca16e32b92121dc945a400105.js"></script>
+          <script src="https://gist.github.com/pdickan/1b99855fdb55df1cc65f3cf1cc55a858.js"></script>
       <div class="evo-space-15"></div>
       <div class="evo-line-1 evo-gray-15"></div>
     </div>
   </div>
 
 
-<!-- END Full Width HTML5 Video -->
+<!-- END Full Width HTML5 Video Background -->
 
 
 </div> <!-- container -->
