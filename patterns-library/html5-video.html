@@ -129,7 +129,7 @@
 
 
 <!-- begin 1 Column HTML5 Video Background -->
-  <div class="video-image">
+<!--   <div class="video-image">
     <div class="video-container">
       <video width="100%" loop="loop" autoplay="autoplay">
         <source src="../video/video.mp4" type="video/mp4">
@@ -139,8 +139,31 @@
       <canvas class="canvas"></canvas>
 
     </div>
+  </div> -->
+<!-- end 1 Column HTML5 Video Background -->
+
+
+
+<!-- begin 1 Column HTML5 Video Background -->
+  <div class="video-image">
+    <div class="video-container">
+      <video id="movie" width="100%" preload loop="loop" autoplay="autoplay">
+      <!--   <source src="pr6.webm" type="video/webm; codecs=vp8,vorbis" />
+        <source src="pr6.ogv" type="video/ogg; codecs=theora,vorbis" /> -->
+        <source src="../video/video.mp4" />
+        <object type="application/x-shockwave-flash"
+          data="flowplayer-3.2.1.swf">
+          <param name="movie" value="flowplayer-3.2.1.swf" />
+          <param name="allowfullscreen" value="true" />
+          <param name="flashvars" value="config={'clip': {'url': 'http://wearehugh.com/dih5/pr6.mp4', 'autoPlay':false, 'autoBuffering':true}}" />
+          <!-- <p>Download video as <a href="pr6.mp4">MP4</a>, <a href="pr6.webm">WebM</a>, or <a href="pr6.ogv">Ogg</a>.</p> -->
+        </object>
+      </video>
+    </div>
   </div>
 <!-- end 1 Column HTML5 Video Background -->
+
+
 
 
 <div class="col-xs-12">
@@ -308,7 +331,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="../js/plugins/canvas-video-player.js"></script>
         <script src="../js/main.js"></script>
         <script src="../js/interactions.js"></script>
 
