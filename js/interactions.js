@@ -385,8 +385,18 @@ if ( typeof define === 'function' && define.amd ) {
 // ----------------------------------------------------------------
 
 
-var v = document.getElementById("movie");
-v.onclick = function() {
+var one = document.getElementById("one-column");
+one.onclick = function() {
+  if (v.paused) {
+    v.play();
+  } else {
+    v.pause();
+  }
+};
+
+
+var full = document.getElementById("full-width");
+full.onclick = function() {
   if (v.paused) {
     v.play();
   } else {
