@@ -380,7 +380,29 @@ if ( typeof define === 'function' && define.amd ) {
 
 
 
+// ----------------------------------------------------------------
+//            Fix for HTML5 Video on any device 
+// ----------------------------------------------------------------
 
+
+var one = document.getElementById("one-column");
+one.onclick = function() {
+  if (v.paused) {
+    v.play();
+  } else {
+    v.pause();
+  }
+};
+
+
+var full = document.getElementById("full-width");
+full.onclick = function() {
+  if (v.paused) {
+    v.play();
+  } else {
+    v.pause();
+  }
+};
 
 
 

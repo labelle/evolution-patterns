@@ -131,11 +131,18 @@
 <!-- begin 1 Column HTML5 Video Background -->
   <div class="video-image">
     <div class="video-container">
-      <video width="100%" autoplay loop>
-        <source src="../video/video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+      <video id="one-column" width="100%" controls preload loop="loop" autoplay="autoplay">
+      <!--   <source src="pr6.webm" type="video/webm; codecs=vp8,vorbis" />
+        <source src="pr6.ogv" type="video/ogg; codecs=theora,vorbis" /> -->
+        <source src="../video/video.mp4" />
+        <object type="application/x-shockwave-flash"
+          data="flowplayer-3.2.1.swf">
+          <param name="one-column" value="flowplayer-3.2.1.swf" />
+          <param name="allowfullscreen" value="true" />
+          <param name="flashvars" value="config={'clip': {'url': 'https://labelle.github.io/evolution-patterns/video/video.mp4', 'autoPlay':true, 'autoBuffering':true}}" />
+          <!-- <p>Download video as <a href="pr6.mp4">MP4</a>, <a href="pr6.webm">WebM</a>, or <a href="pr6.ogv">Ogg</a>.</p> -->
+        </object>
       </video>
-
     </div>
   </div>
 <!-- end 1 Column HTML5 Video Background -->
@@ -194,9 +201,17 @@
 <!-- begin Full Width HTML5 Video Background -->
   <div class="video-image">
     <div class="video-container">
-      <video width="100%" autoplay loop>
-        <source src="../video/video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+      <video id="full-width" width="100%" controls preload loop="loop" autoplay="autoplay">
+      <!--   <source src="pr6.webm" type="video/webm; codecs=vp8,vorbis" />
+        <source src="pr6.ogv" type="video/ogg; codecs=theora,vorbis" /> -->
+        <source src="../video/video.mp4" />
+        <object type="application/x-shockwave-flash"
+          data="flowplayer-3.2.1.swf">
+          <param name="full-width" value="flowplayer-3.2.1.swf" />
+          <param name="allowfullscreen" value="true" />
+          <param name="flashvars" value="config={'clip': {'url': 'https://labelle.github.io/evolution-patterns/video/video.mp4', 'autoPlay':true, 'autoBuffering':true}}" />
+          <!-- <p>Download video as <a href="pr6.mp4">MP4</a>, <a href="pr6.webm">WebM</a>, or <a href="pr6.ogv">Ogg</a>.</p> -->
+        </object>
       </video>
     </div>
   </div>
