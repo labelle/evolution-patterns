@@ -380,3 +380,20 @@ if ( typeof define === 'function' && define.amd ) {
 
 
 
+
+// ----------------------------------------------------------------
+//            Fix for HTML5 Video on any device 
+// ----------------------------------------------------------------
+
+
+var v = document.getElementById("movie");
+v.onclick = function() {
+  if (v.paused) {
+    v.play();
+  } else {
+    v.pause();
+  }
+};
+
+
+
