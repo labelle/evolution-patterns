@@ -101,6 +101,30 @@ VIDEO AND TEXT ABOVE STYLES
   left: 0;
   z-index: 1; }
 
+.full-width-container {
+  overflow: hidden;
+  height: 0px;
+  padding-bottom: 500px;
+  position: relative; }
+
+.full-width-container video {
+  position: absolute;
+  width: 100%; }
+
+.full-width-container-responsive {
+  width: 100% !important;
+  height: auto !important; }
+
+.html5-video-full-width-wrapper {
+  background-color: #000000;
+  height: 500px;
+  width: 100%; }
+
+.html5-video-full-width-wrapper video {
+  width: auto;
+  height: 500px;
+  margin-top: 0px; }
+
 /*********************
 COLOR STYLES
 *********************/
