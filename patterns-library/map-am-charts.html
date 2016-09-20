@@ -74,6 +74,8 @@
 
 </header>
 
+
+
 <div class="container">
 
 
@@ -81,14 +83,11 @@
 
   <div class="row">
     <div class="col-xs-12">
-      <h2 class="evo-header-biggest evo-no-line">HTML5 Video</h2>
+      <h2 class="evo-header-biggest evo-no-line">Map AM Charts</h2>
     </div>
     <div class="evo-space-smallest"></div>
   </div>
 
-<!-- <div class="evo-line-3"></div>
-
- <div class="evo-space-25"></div> -->
 
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8">
@@ -97,57 +96,37 @@
   </div>
 
 
-
-<!-- page title-->
-
-<!--   <div class="row">
-    <div class="col-xs-12">
-      <div class="evo-space-15"></div>
-        <div class="evo-header-20 evo-no-line">5 Column Grid</div>
-      <div class="evo-space-15"></div>
-    </div>
-  </div> -->
-
-
 <main>
 
-<!-- BEGIN 1 Column Video -->
+<!-- BEGIN GRIDS -->
 
 <!-- evo-grid header -->
-  <div class="row">
-    <div id="evo-grid-1-a" class="col-xs-12">
-      <div class="evo-space"></div>
-
-      <div class="evo-line-thinnest"></div>
-
-      <div class="evo-space-small"></div>
-        <div class="evo-space-15"></div>
-          <div class="evo-header-10 evo-no-line">1 Column HTML5 Video</div>
-        <div class="evo-space-5"></div>
-    </div>
-  </div>
-
-
-<!-- begin 1 Column HTML5 Video -->
-  <div class="video-image">
-    <div class="video-container">
-      <video width="100%" controls loop poster="../img/video-bg.png">
-        <source src="../video/video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-
-    </div>
-  </div>
-<!-- end 1 Column HTML5 Video -->
-
-
-<div class="col-xs-12">
-  <div class="evo-space"></div>
-</div>
-
-
 <div class="row">
   <div class="col-xs-12">
+    <div class="evo-space"></div>
+
+    <div class="evo-line-thinnest"></div>
+
+    <div class="evo-space-small"></div>
+      <div class="evo-space-15"></div>
+        <div class="evo-header-10 evo-no-line">Heat Map</div>
+      <div class="evo-space-5"></div>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-xs-12">
+          <div id="heatmap" style="width: auto; height: 500px;"></div>
+      <div class="evo-space-15"></div>
+    </div>
+  </div>
+
+<!-- END GRIDS -->
+
+<!-- begin code snippet -->
+ <div class="row">
+  <div class="col-xs-12">
+    <div class="evo-space-15"></div>
       <a href="javascript: void(0);" id="view_code_1">
         <span class="evo-button-5-caps view-hide">view code</span> 
       </a> 
@@ -158,60 +137,50 @@
   <div class="row" id="toggle_code_1" style="display: none;">
     <div class="evo-space-15"></div>
     <div id="evo-grid-1-code" class="col-xs-12">
-        <style type="text/css">.gist-data {max-height: 400px;}</style>  
-        <script src="https://gist.github.com/pdickan/effdc0b577bb385dfd533105aad054fd.js"></script>
-      <div class="evo-space-15"></div>
-      <div class="evo-line-1 evo-gray-15"></div>
+        <style type="text/css">.gist-data {max-height: 400px;}</style>
+          <script src="https://gist.github.com/pdickan/6d91b314ada1896f97a6a6c8bb2ac180.js"></script>
     </div>
   </div>
 
-<!-- END 1 Column HTML5 Video -->
-
-
-
-
-
-<!-- BEGIN Full Width HTML5 Video -->
-
-<!-- evo-grid header -->
-  <div class="row">
-    <div id="evo-grid-1-a" class="col-xs-12">
-      <div class="evo-space"></div>
-
-      <div class="evo-line-thinnest evo-gray-15"></div>
-
-      <div class="evo-space-small"></div>
-        <div class="evo-space-15"></div>
-          <div class="evo-header-10 evo-no-line">Full Width HTML5 Video</div>
-        <div class="evo-space-5"></div>
-    </div>
+ <div class="row">
+  <div class="col-xs-12">
+    <div class="evo-space"></div>
   </div>
+</div>
+<!-- end code snippet -->
 
+</main>
 
 </div> <!-- container -->
 
 
-<!-- begin Full Width HTML5 Video -->
-  <div class="html5-video-full-width-wrapper text-center">
-
-      <video controls loop poster="../img/video-bg.png">
-        <source src="../video/video.mp4" />
-      </video>
-
-  </div>
-
-<!-- end Full Width HTML5 Video -->
-
+<!-- evo-grid header -->
 
 <div class="container">
 
-
-    <div class="col-xs-12">
-      <div class="evo-space"></div>
+  <div class="row">
+    <div id="evo-grid-2-b" class="col-xs-12">
+      <div class="evo-line-1 evo-gray-15"></div>
+        <div class="evo-space-15"></div>
+          <div class="evo-header-10 evo-no-line">Grouped Countries Map</div>
+        <div class="evo-space-5"></div>
     </div>
+  </div>
 
+</div>
 
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+          <div id="groupedmap" style="width: auto; height: 500px;"></div>
+      <div class="evo-space-15"></div>
+    </div>
+  </div>
+</div>
 
+<div class="container">
+<div class="evo-space-15"></div>
+<!-- begin code snippet -->
  <div class="row">
   <div class="col-xs-12">
       <a href="javascript: void(0);" id="view_code_2">
@@ -225,63 +194,48 @@
     <div class="evo-space-15"></div>
     <div id="evo-grid-1-code" class="col-xs-12">
         <style type="text/css">.gist-data {max-height: 400px;}</style>
-          <script src="https://gist.github.com/pdickan/afe6ff5ca16e32b92121dc945a400105.js"></script>
-      <div class="evo-space-15"></div>
-      <div class="evo-line-1 evo-gray-15"></div>
+          <script src="https://gist.github.com/pdickan/30bf6dee05c863b093b056528e2191b0.js"></script>
     </div>
   </div>
 
+ <div class="row">
+  <div class="col-xs-12">
+    <div class="evo-space"></div>
+  </div>
+</div>
+<!-- end code snippet -->
+</div>
 
-<!-- END Full Width HTML5 Video -->
-
-
-</div> <!-- container -->
 
 
 
-
-<!-- BEGIN Full Screen HTML5 -->
-
-<!-- evo-grid header -->
 <div class="container">
+
   <div class="row">
-    <div id="evo-grid-1-a" class="col-xs-12">
-      <div class="evo-space"></div>
-
-      <div class="evo-line-thinnest evo-gray-15"></div>
-
-      <div class="evo-space-small"></div>
+    <div id="evo-grid-2-b" class="col-xs-12">
+      <div class="evo-line-1 evo-gray-15"></div>
         <div class="evo-space-15"></div>
-          <div class="evo-header-10 evo-no-line">Full Screen HTML5 Video</div>
+          <div class="evo-header-10 evo-no-line">Map With Bubbles</div>
         <div class="evo-space-5"></div>
     </div>
   </div>
 
-
-</div> <!-- container -->
-
-
-<!-- begin Full Screen HTML5 Video -->
-  <div class="video-image">
-    <div class="video-container">
-      <video width="100%" controls loop poster="../img/video-bg.png">
-        <source src="../video/video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
-<!-- end Full Screen HTML5 Video -->
+</div>
 
 
 <div class="container">
-
-
+  <div class="row">
     <div class="col-xs-12">
-      <div class="evo-space"></div>
+        <div id="bubblesmap" style="width: auto; height: 500px;"></div>
+      <div class="evo-space-15"></div>
     </div>
+  </div>
+</div>
 
 
-
+<div class="container">
+<div class="evo-space-15"></div>
+<!-- begin code snippet -->
  <div class="row">
   <div class="col-xs-12">
       <a href="javascript: void(0);" id="view_code_3">
@@ -295,38 +249,29 @@
     <div class="evo-space-15"></div>
     <div id="evo-grid-1-code" class="col-xs-12">
         <style type="text/css">.gist-data {max-height: 400px;}</style>
-          <script src="https://gist.github.com/pdickan/64b752394f879d9444f9dc890e07239e.js"></script>
-      <div class="evo-space-15"></div>
-      <div class="evo-line-1 evo-gray-15"></div>
+          <script src="https://gist.github.com/pdickan/b74445d583ba6c1911c93a9b7cd4563f.js"></script>
     </div>
   </div>
 
-
-<!-- END Full Screen HTML5 Video -->
-
-
-</div> <!-- container -->
-
-</main>
-
-
-
-
-<div class="container">
-
-  <div class="row">
-    <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-      <div class="evo-space-big"></div>
-    </div>
+ <div class="row">
+  <div class="col-xs-12">
+    <div class="evo-space"></div>
   </div>
+</div>
+<!-- end code snippet -->
+</div>
 
-  <div class="row">
-    <div class="hidden-xs col-sm-12">
-      <div class="evo-space-biggest"></div>
-      <div class="evo-line"></div>
-      <div class="evo-space-15"></div>
-    </div>
-  </div>
+
+
+    <div class="container">
+
+      <div class="row">
+        <div class="hidden-xs col-sm-12">
+          <div class="evo-space-biggest"></div>
+          <div class="evo-line"></div>
+          <div class="evo-space-15"></div>
+        </div>
+      </div>
 
     <div class="row">
 
@@ -365,16 +310,20 @@
           <div class="evo-space-15"></div>
       </nav>
 
-    </div><!-- social -->   
+    </div><!-- social --> 
 
-
-</div> <!-- container -->
+    </div>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCPmBNaEq5lcfHJQF80LICO55ApbN91tA&callback=initMap"
+    async defer></script>
+        <script src="../js/plugins/ammap.js"></script>
+        <script src="../js/plugins/usaLow.js"></script>
+        <script src="../js/plugins/usa2Low.js"></script>
         <script src="../js/main.js"></script>
         <script src="../js/interactions.js"></script>
+        <script src="../js/maps-am-charts.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
