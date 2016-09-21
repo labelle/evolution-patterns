@@ -213,7 +213,7 @@ AmCharts.makeChart( "heatmap", {
 
           areasSettings: {
             autoZoom: true,
-            rollOverColor: "#B2D600",
+            rollOverColor: "#00aeef",
             rollOverOutlineColor: "#FFFFFF",
           },
 
@@ -548,7 +548,7 @@ AmCharts.makeChart( "groupedmap", {
 
                   areasSettings: {
                     rollOverOutlineColor: "#FFFFFF",
-                    rollOverColor: "#B2D600",
+                    rollOverColor: "#00aeef",
                     alpha: 0.8,
                     unlistedAreasAlpha: 0.1
                     // balloonText: "[[title]] joined EU at [[customData]]"
@@ -755,7 +755,7 @@ AmCharts.ready(function() {
             width: dataItem.size,
             height: dataItem.size,
             color: dataItem.color,
-            rollOverColor: "#B2D600",
+            rollOverColor: "#00aeef",
             longitude: latlong[id].longitude,
             latitude: latlong[id].latitude,
             title: dataItem.name,
