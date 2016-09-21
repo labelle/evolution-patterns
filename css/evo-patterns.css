@@ -1500,8 +1500,6 @@ Modules - reusable parts of our design
 -------------------------------- */
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width: 1170px;
   margin: 0 auto; }
 
 .cd-container::after {
@@ -2294,7 +2292,6 @@ a:visited {
 .timeline-container {
   border-left: 2px solid #DCDCDB;
   margin: 20px auto;
-  width: 900px;
   /*background-color: #2f2f2f;*/
   font-size: 62.5%;
   /*  font-family: Arial, Helvetica, sans-serif;
@@ -2332,7 +2329,7 @@ a:visited {
 
 .timeline-toggle {
   float: right;
-  margin-right: 0;
+  margin-right: 15px;
   white-space: nowrap; }
 
 .timeline-toggle:hover {
