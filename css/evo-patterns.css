@@ -1088,25 +1088,6 @@ p {
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  font-size: 1.6rem;
-  font-family: "Helvetica Neue", sans-serif;
-  color: #4A4D50;
-  /*background-color: #f8f8f8;*/ }
-
-a {
-  color: #00aeef;
-  text-decoration: none; }
-
-a:hover {
-  color: #00aeef; }
-
 /* -------------------------------- 
 
 Main Components 
@@ -1203,7 +1184,6 @@ Main Components
   text-align: center;
   font-size: 1.3rem;
   padding-bottom: 15px;
-  color: #4A4D50;
   /* fix bug on Safari - text flickering while timeline translates */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -2458,8 +2438,7 @@ a:visited {
   /*font-weight: 100;*/
   /*line-height: 1.2em;*/
   margin: 6px 0 10px;
-  width: 500px;
-  color: #4A4D50; }
+  width: 500px; }
 
 .timeline-event-content h4 {
   clear: left;

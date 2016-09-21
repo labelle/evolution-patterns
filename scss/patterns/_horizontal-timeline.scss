@@ -3,29 +3,7 @@
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box;
-}
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Helvetica Neue", sans-serif;
-  color: #4A4D50;
-  /*background-color: #f8f8f8;*/
-}
-
-a {
-  color: #00aeef;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #00aeef;
-}
 
 /* -------------------------------- 
 
@@ -123,7 +101,7 @@ Main Components
   text-align: center;
   font-size: 1.3rem;
   padding-bottom: 15px;
-  color: #4A4D50;
+  // color: #4A4D50;
   /* fix bug on Safari - text flickering while timeline translates */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
