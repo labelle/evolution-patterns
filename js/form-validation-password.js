@@ -144,3 +144,25 @@ function removeWarningHeader() {
 
 
 document.getElementById("password2").onkeyup = removeWarningHeader;
+
+
+
+
+
+// show or hide password
+function toggle_password(target){
+    var d = document;
+    var tag = d.getElementById(target);
+    var tag2 = d.getElementById("showhide");
+
+    if (tag2.innerHTML == 'show'){
+        tag.setAttribute('type', 'text');   
+        tag2.innerHTML = 'hide';
+
+    } else {
+        tag.setAttribute('type', 'password');   
+        tag2.innerHTML = 'show';
+    }
+
+    return false;
+}
