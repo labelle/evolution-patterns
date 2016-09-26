@@ -2480,3 +2480,28 @@ a:visited {
 
 .timeline-event-content .media p a {
   text-transform: lowercase; }
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: -20px;
+  bottom: 10px;
+  color: #00aeef;
+  left: 15px;
+  font-size: 14px;
+  opacity: 1; }
+
+input:not(:focus):valid ~ .floating-label {
+  color: #808080; }
+
+input:focus {
+  border-bottom: 1px solid #00aeef !important;
+  transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all; }
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 5px;
+  transition: 0.3s ease all; }
