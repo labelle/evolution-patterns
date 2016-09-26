@@ -1,0 +1,27 @@
+ul.helper-text {
+    display: block;
+    margin-top: 6px;
+    // font-size: 12px;
+    // line-height: 22px;
+    color: #0f0f0f;
+    
+    li.valid {
+      color: rgba(0,0,0,.5);
+    }
+  }
+
+ul.helper-text-1 {
+    display: block;
+    margin-top: 6px;
+    // font-size: 12px;
+    // line-height: 22px;
+    color: #0f0f0f;
+    
+    li.valid {
+      color: rgba(0,0,0,.5);
+    }
+  }
+  
+  // &.valid {
+  //   input { border: 2px solid #1fd34a; }
+  // }

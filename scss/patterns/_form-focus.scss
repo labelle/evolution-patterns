@@ -18,7 +18,7 @@ input:not(:focus):valid ~ .floating-label{
 //   height: 35px;
 // }
 
-input:focus { 
+input.inputText:focus { 
     border-bottom: 1px solid #00aeef !important;
     transition:0.5s ease all; 
     -moz-transition:0.5s ease all; 

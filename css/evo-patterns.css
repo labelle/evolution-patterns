@@ -2493,7 +2493,7 @@ input:not(:focus):valid ~ .floating-label {
 input:not(:focus):valid ~ .floating-label {
   color: #808080; }
 
-input:focus {
+input.inputText:focus {
   border-bottom: 1px solid #00aeef !important;
   transition: 0.5s ease all;
   -moz-transition: 0.5s ease all;
@@ -2505,3 +2505,17 @@ input:focus {
   left: 15px;
   top: 5px;
   transition: 0.3s ease all; }
+
+ul.helper-text {
+  display: block;
+  margin-top: 6px;
+  color: #0f0f0f; }
+  ul.helper-text li.valid {
+    color: rgba(0, 0, 0, 0.5); }
+
+ul.helper-text-1 {
+  display: block;
+  margin-top: 6px;
+  color: #0f0f0f; }
+  ul.helper-text-1 li.valid {
+    color: rgba(0, 0, 0, 0.5); }
