@@ -45,17 +45,17 @@ document.getElementById("form-validation-login-b-line").onsubmit = function () {
 
     if (p == null || p == "") {
         passwordError = "Please enter your password";
-        document.getElementById("password_error_login_b_line").innerHTML = passwordError;
+        document.getElementById("password1_error_login_b_line").innerHTML = passwordError;
         submit = false;
 
     } else if (p.length < 5) {
         passwordLength = "Your password must contain minimum 5 characters"
-        document.getElementById("password_error_login_b_line").innerHTML = passwordLength;
+        document.getElementById("password1_error_login_b_line").innerHTML = passwordLength;
         submit = false;
 
     } else {
         passwordSuccess = "Thank you."
-        document.getElementById("password_error_login_b_line").innerHTML = passwordSuccess;
+        document.getElementById("password1_error_login_b_line").innerHTML = passwordSuccess;
     }
 
 

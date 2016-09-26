@@ -55,24 +55,24 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
 
     if (e == null || e == "") {
         emailErrorLine = "Please enter your email";
-        document.getElementById("email_error_login_line").innerHTML = emailErrorLine;
+        document.getElementById("email1_error_login_line").innerHTML = emailErrorLine;
         submit = false;
     }
 
 
     if (p == null || p == "") {
         passwordErrorLine = "Please enter your password";
-        document.getElementById("password_error_login_line").innerHTML = passwordErrorLine;
+        document.getElementById("password1_error_login_line").innerHTML = passwordErrorLine;
         submit = false;
 
     } else if (p.length < 5) {
         passwordLengthLine = "Your password must contain minimum 5 characters"
-        document.getElementById("password_error_login_line").innerHTML = passwordLengthLine;
+        document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
         submit = false;
 
     } else {
         passwordSuccessLine = "Thank you."
-        document.getElementById("password_error_login_line").innerHTML = passwordSuccessLine;
+        document.getElementById("password1_error_login_line").innerHTML = passwordSuccessLine;
     }
 
 

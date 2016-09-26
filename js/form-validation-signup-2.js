@@ -1,6 +1,7 @@
 document.getElementById("form-validation-login").onsubmit = function () {
 
     var e = document.forms["form-validation-login"]["email"].value;
+    var u = document.forms["form-validation-login"]["username"].value;
     var p = document.forms["form-validation-login"]["password"].value;
 
     var submit = true;
@@ -9,6 +10,12 @@ document.getElementById("form-validation-login").onsubmit = function () {
     if (e == null || e == "") {
         emailError = "Please enter your email";
         document.getElementById("email_error_login").innerHTML = emailError;
+        submit = false;
+    }
+
+    if (u == null || u == "") {
+        usernameError = "Please enter your username";
+        document.getElementById("username_error_login").innerHTML = usernameError;
         submit = false;
     }
 
@@ -37,6 +44,7 @@ function removeWarningLogin() {
 }
 
 document.getElementById("email").onkeyup = removeWarningLogin;
+document.getElementById("username").onkeyup = removeWarningLogin;
 document.getElementById("password").onkeyup = removeWarningLogin;
 
 
@@ -48,6 +56,7 @@ document.getElementById("password").onkeyup = removeWarningLogin;
 document.getElementById("form-validation-login-line").onsubmit = function () {
 
     var e = document.forms["form-validation-login-line"]["email1"].value;
+    var u = document.forms["form-validation-login-line"]["username1"].value;
     var p = document.forms["form-validation-login-line"]["password1"].value;
 
     var submit = true;
@@ -55,24 +64,30 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
 
     if (e == null || e == "") {
         emailErrorLine = "Please enter your email";
-        document.getElementById("email_error_login_line").innerHTML = emailErrorLine;
+        document.getElementById("email1_error_login_line").innerHTML = emailErrorLine;
+        submit = false;
+    }
+
+    if (u == null || u == "") {
+        usernameErrorLine = "Please enter your username";
+        document.getElementById("username1_error_login_line").innerHTML = usernameErrorLine;
         submit = false;
     }
 
 
     if (p == null || p == "") {
         passwordErrorLine = "Please enter your password";
-        document.getElementById("password_error_login_line").innerHTML = passwordErrorLine;
+        document.getElementById("password1_error_login_line").innerHTML = passwordErrorLine;
         submit = false;
 
     } else if (p.length < 5) {
         passwordLengthLine = "Your password must contain minimum 5 characters"
-        document.getElementById("password_error_login_line").innerHTML = passwordLengthLine;
+        document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
         submit = false;
 
     } else {
         passwordSuccessLine = "Thank you."
-        document.getElementById("password_error_login_line").innerHTML = passwordSuccessLine;
+        document.getElementById("password1_error_login_line").innerHTML = passwordSuccessLine;
     }
 
 
@@ -84,6 +99,7 @@ function removeWarningLogin() {
 }
 
 document.getElementById("email1").onkeyup = removeWarningLogin;
+document.getElementById("username1").onkeyup = removeWarningLogin;
 document.getElementById("password1").onkeyup = removeWarningLogin;
 
 
