@@ -2507,18 +2507,20 @@ input.inputText:focus {
   transition: 0.3s ease all; }
 
 ul.helper-text {
-  display: block;
   margin-top: 6px;
   color: #0f0f0f; }
   ul.helper-text li.valid {
-    color: rgba(0, 0, 0, 0.5); }
+    color: rgba(0, 0, 0, 0.5);
+    background: url(../icons-gray/book-gray/circle-solid-book-gray.svg) 0 0.29118rem no-repeat;
+    background-size: .30625rem; }
 
 ul.helper-text-1 {
-  display: block;
   margin-top: 6px;
   color: #0f0f0f; }
   ul.helper-text-1 li.valid {
-    color: rgba(0, 0, 0, 0.5); }
+    color: rgba(0, 0, 0, 0.5);
+    background: url(../icons-gray/book-gray/circle-solid-book-gray.svg) 0 0.29118rem no-repeat;
+    background-size: .30625rem; }
 
 #input_container {
   position: relative;
@@ -2540,5 +2542,4 @@ ul.helper-text-1 {
 
 textarea.focus-border-color:focus, input.focus-border-color:focus, input[type].focus-border-color:focus, .uneditable-input.focus-border-color:focus {
   border-color: rgba(0, 174, 239, 0.8);
-  box-shadow: 0 1px 1px rgba(0, 174, 239, 0.075) inset, 0 0 8px rgba(0, 174, 239, 0.6);
   outline: 0 none; }
