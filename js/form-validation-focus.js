@@ -19,7 +19,7 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
         submit = false;
 
     } else if (p.length < 5) {
-        passwordLengthLine = "Your password must contain minimum 5 characters"
+        passwordLengthLine = "Must be more than 8 characters"
         document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
         submit = false;
 

@@ -28,7 +28,7 @@ document.getElementById("form-validation-login").onsubmit = function () {
         submit = false;
 
     } else if (p !== pattern.test(p)) {
-        passwordLength = "Please match all the bullets list below";
+        passwordLength = "Please match all the bullets listed below";
         document.getElementById("password_error_login").innerHTML = passwordLength;
         submit = false;
 
@@ -85,7 +85,7 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
         submit = false;
 
     } else if (p !== pattern.test(p)) {
-        passwordLengthLine = "Please match all the bullets list below"
+        passwordLengthLine = "Please match all the bullets listed below";
         document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
         submit = false;
 

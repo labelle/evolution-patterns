@@ -2541,5 +2541,5 @@ ul.helper-text-1 {
   height: 23px; }
 
 textarea.focus-border-color:focus, input.focus-border-color:focus, input[type].focus-border-color:focus, .uneditable-input.focus-border-color:focus {
-  border-color: rgba(0, 174, 239, 0.8);
+  border-color: rgba(0, 174, 239, 0.8) !important;
   outline: 0 none; }
