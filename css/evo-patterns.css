@@ -2519,3 +2519,21 @@ ul.helper-text-1 {
   color: #0f0f0f; }
   ul.helper-text-1 li.valid {
     color: rgba(0, 0, 0, 0.5); }
+
+#input_container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background: #ddd; }
+
+#input {
+  height: 35px;
+  margin: 0; }
+
+#input_img {
+  position: absolute;
+  cursor: pointer;
+  bottom: 10px;
+  right: 10px;
+  width: 23px;
+  height: 23px; }

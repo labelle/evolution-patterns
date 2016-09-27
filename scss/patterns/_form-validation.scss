@@ -25,3 +25,26 @@ ul.helper-text-1 {
   // &.valid {
   //   input { border: 2px solid #1fd34a; }
   // }
+
+
+
+// using eye-book-gray to show/hide password
+#input_container {
+    position:relative;
+    padding:0;
+    margin:0;
+    background:#ddd;
+}
+#input {
+    height:35px;
+    margin:0;
+    // padding-left: 30px;
+}
+#input_img {
+    position:absolute;
+    cursor: pointer;
+    bottom:10px;
+    right:10px;
+    width:23px;
+    height:23px;
+}
