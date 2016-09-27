@@ -46,7 +46,8 @@ function toggle_password_line(target){
     charLength: document.querySelector('.helper-text .length'),
     lowercase: document.querySelector('.helper-text .lowercase'),
     uppercase: document.querySelector('.helper-text .uppercase'),
-    special: document.querySelector('.helper-text .special')
+    number: document.querySelector('.helper-text .number'),
+    specialchar: document.querySelector('.helper-text .specialchar')
   };
   
   var pattern = {
@@ -69,8 +70,15 @@ function toggle_password_line(target){
         return true;
       }
     },
-    special: function() {
-      var regex = /^(?=.*[0-9_\W]).+$/; // Special character or number pattern
+    number: function() {
+      var regex = /^(?=.*[0-9]).+$/; // Number character pattern
+
+      if( regex.test(password.value) ) {
+        return true;
+      }
+    }, 
+    specialchar: function() {
+      var regex = /^(?=.*[_\W]).+$/; // Special character pattern
 
       if( regex.test(password.value) ) {
         return true;
@@ -89,14 +97,18 @@ function toggle_password_line(target){
     // Check that password contains an uppercase letter
     patternTest( pattern.uppercase(), helperText.uppercase );
     
-    // Check that password contains a number or special character
-    patternTest( pattern.special(), helperText.special );
+    // Check that password contains a number 
+    patternTest( pattern.number(), helperText.number );
+
+    // Check that password contains a special character
+    patternTest( pattern.specialchar(), helperText.specialchar );
     
     // Check that all requirements are fulfilled
     if( hasClass(helperText.charLength, 'valid') &&
         hasClass(helperText.lowercase, 'valid') && 
         hasClass(helperText.uppercase, 'valid') && 
-        hasClass(helperText.special, 'valid')
+        hasClass(helperText.number, 'valid') &&
+        hasClass(helperText.specialchar, 'valid') 
     ) {
       addClass(password.parentElement, 'valid');
     }
@@ -156,7 +168,8 @@ function toggle_password_line(target){
     charLength: document.querySelector('.helper-text-1 .length'),
     lowercase: document.querySelector('.helper-text-1 .lowercase'),
     uppercase: document.querySelector('.helper-text-1 .uppercase'),
-    special: document.querySelector('.helper-text-1 .special')
+    number: document.querySelector('.helper-text-1 .number'),
+    specialchar: document.querySelector('.helper-text-1 .specialchar')
   };
   
   var pattern = {
@@ -179,13 +192,20 @@ function toggle_password_line(target){
         return true;
       }
     },
-    special: function() {
-      var regex = /^(?=.*[0-9_\W]).+$/; // Special character or number pattern
+    number: function() {
+      var regex = /^(?=.*[0-9]).+$/; // Number pattern
 
       if( regex.test(password1.value) ) {
         return true;
       }
-    }   
+    },
+    specialchar: function() {
+      var regex = /^(?=.*[_\W]).+$/; // Special character pattern
+
+      if( regex.test(password1.value) ) {
+        return true;
+      }
+    }    
   };
   
   // Listen for keyup action on password field
@@ -199,14 +219,18 @@ function toggle_password_line(target){
     // Check that password contains an uppercase letter
     patternTest( pattern.uppercase(), helperText.uppercase );
     
-    // Check that password contains a number or special character
-    patternTest( pattern.special(), helperText.special );
+    // Check that password contains a number 
+    patternTest( pattern.number(), helperText.number );
+
+    // Check that password contains a special character
+    patternTest( pattern.specialchar(), helperText.specialchar );
     
     // Check that all requirements are fulfilled
     if( hasClass(helperText.charLength, 'valid') &&
         hasClass(helperText.lowercase, 'valid') && 
         hasClass(helperText.uppercase, 'valid') && 
-        hasClass(helperText.special, 'valid')
+        hasClass(helperText.number, 'valid') &&
+        hasClass(helperText.specialchar, 'valid')
     ) {
       addClass(password1.parentElement, 'valid');
     }

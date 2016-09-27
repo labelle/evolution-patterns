@@ -2537,3 +2537,8 @@ ul.helper-text-1 {
   right: 10px;
   width: 23px;
   height: 23px; }
+
+textarea.focus-border-color:focus, input.focus-border-color:focus, input[type].focus-border-color:focus, .uneditable-input.focus-border-color:focus {
+  border-color: rgba(0, 174, 239, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 174, 239, 0.075) inset, 0 0 8px rgba(0, 174, 239, 0.6);
+  outline: 0 none; }
