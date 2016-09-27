@@ -1,5 +1,5 @@
 ul.helper-text {
-    display: block;
+    // display: block;
     margin-top: 6px;
     // font-size: 12px;
     // line-height: 22px;
@@ -7,11 +7,13 @@ ul.helper-text {
     
     li.valid {
       color: rgba(0,0,0,.5);
+      background: url(../icons-gray/book-gray/circle-solid-book-gray.svg) 0 .29118rem no-repeat;
+      background-size: .30625rem;
     }
   }
 
 ul.helper-text-1 {
-    display: block;
+    // display: block;
     margin-top: 6px;
     // font-size: 12px;
     // line-height: 22px;
@@ -19,6 +21,8 @@ ul.helper-text-1 {
     
     li.valid {
       color: rgba(0,0,0,.5);
+      background: url(../icons-gray/book-gray/circle-solid-book-gray.svg) 0 .29118rem no-repeat;
+      background-size: .30625rem;
     }
   }
   
