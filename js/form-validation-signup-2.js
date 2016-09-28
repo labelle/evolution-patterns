@@ -1,3 +1,6 @@
+
+// THIS IS THE BEGINING OF SIGNUP FORM
+
 document.getElementById("form-validation-login").onsubmit = function () {
 
     var e = document.forms["form-validation-login"]["email"].value;
@@ -52,88 +55,11 @@ document.getElementById("password").onkeyup = removeWarningLogin;
 
 
 
-
-
-
-document.getElementById("form-validation-login-line").onsubmit = function () {
-
-    var e = document.forms["form-validation-login-line"]["email1"].value;
-    var u = document.forms["form-validation-login-line"]["username1"].value;
-    var p = document.forms["form-validation-login-line"]["password1"].value;
-
-    var pattern = /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
-
-    var submit = true;
-    
-
-    if (e == null || e == "") {
-        emailErrorLine = "Please enter your email";
-        document.getElementById("email1_error_login_line").innerHTML = emailErrorLine;
-        submit = false;
-    }
-
-    if (u == null || u == "") {
-        usernameErrorLine = "Please enter your username";
-        document.getElementById("username1_error_login_line").innerHTML = usernameErrorLine;
-        submit = false;
-    }
-
-
-    if (p == null || p == "") {
-        passwordErrorLine = "Please enter your password";
-        document.getElementById("password1_error_login_line").innerHTML = passwordErrorLine;
-        submit = false;
-
-    } else if (p !== pattern.test(p)) {
-        passwordLengthLine = "Please match all the bullets listed below";
-        document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
-        submit = false;
-
-    } else {
-        passwordSuccessLine = "Thank you."
-        document.getElementById("password1_error_login_line").innerHTML = passwordSuccessLine;
-    }
-
-
-    return submit;
-}
-
-function removeWarningLogin() {
-    document.getElementById(this.id + "_error_login_line").innerHTML = "";
-}
-
-document.getElementById("email1").onkeyup = removeWarningLogin;
-document.getElementById("username1").onkeyup = removeWarningLogin;
-document.getElementById("password1").onkeyup = removeWarningLogin;
-
-
-
-
 // show or hide password
 function toggle_password(target){
     var d = document;
     var tag = d.getElementById(target);
     var tag2 = d.getElementById("showhide");
-
-    if (tag2.innerHTML == 'show'){
-        tag.setAttribute('type', 'text');   
-        tag2.innerHTML = 'hide';
-
-    } else {
-        tag.setAttribute('type', 'password');   
-        tag2.innerHTML = 'show';
-    }
-
-    return false;
-}
-
-
-
-// show or hide password
-function toggle_password_line(target){
-    var d = document;
-    var tag = d.getElementById(target);
-    var tag2 = d.getElementById("showhideline");
 
     if (tag2.innerHTML == 'show'){
         tag.setAttribute('type', 'text');   
@@ -268,7 +194,93 @@ function toggle_password_line(target){
 })();
 
 
+// THIS IS THE END OF SIGNUP FORM
 
+
+
+
+
+
+
+
+
+
+// THIS IS THE BEGINING OF FOCUSED LINE SIGNUP FORM
+
+document.getElementById("form-validation-login-line").onsubmit = function () {
+
+    var e = document.forms["form-validation-login-line"]["email1"].value;
+    var u = document.forms["form-validation-login-line"]["username1"].value;
+    var p = document.forms["form-validation-login-line"]["password1"].value;
+
+
+    var submit = true;
+    
+
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e)) {  
+        emailErrorLine = "Your email is not valid";
+        document.getElementById("email1_error_login_line").innerHTML = emailErrorLine;
+        submit = false;
+    }
+     
+
+    if (u.length < 8 || u.length > 15) {
+        usernameErrorLine = "Please enter between 8 and 15 characters";
+        document.getElementById("username1_error_login_line").innerHTML = usernameErrorLine;
+        submit = false;
+    }
+
+
+
+    if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/.test(p)) {
+        passwordLengthLine = "Please match all the bullets listed below";
+        document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
+        submit = false;
+
+    }
+
+    // if(/^[a-zA-Z0-9- ]*$/.test(p) == false) {
+    //   alert('Your search string contains illegal characters.');
+    // }
+
+    // if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/.test(p)) {
+    //     passwordLengthLine = "special character missing";
+    //     document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
+    //     submit = false;
+
+    // }
+
+
+    return submit;
+}
+
+function removeWarningLogin() {
+    document.getElementById(this.id + "_error_login_line").innerHTML = "";
+}
+
+document.getElementById("email1").onkeyup = removeWarningLogin;
+document.getElementById("username1").onkeyup = removeWarningLogin;
+document.getElementById("password1").onkeyup = removeWarningLogin;
+
+
+
+// show or hide password with line
+function toggle_password_line(target){
+    var d = document;
+    var tag = d.getElementById(target);
+    var tag2 = d.getElementById("showhideline");
+
+    if (tag2.innerHTML == 'show'){
+        tag.setAttribute('type', 'text');   
+        tag2.innerHTML = 'hide';
+
+    } else {
+        tag.setAttribute('type', 'password');   
+        tag2.innerHTML = 'show';
+    }
+
+    return false;
+}
 
 
 
@@ -388,3 +400,6 @@ function toggle_password_line(target){
   }
   
 })();
+
+// THIS IS THE END OF FOCUSED LINE SIGNUP FORM
+

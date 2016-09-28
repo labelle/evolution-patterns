@@ -107,7 +107,7 @@
 
 <div class="row">
 
-<!-- BEGIN FORM PASSWORD 1 -->
+<!-- BEGIN FORM SIMPLE SIGNUP 2 -->
 
   <div class="col-xs-12 col-sm-6">
 
@@ -122,7 +122,7 @@
 <!-- begin pattern -->
 
 
-
+      <!-- THIS IS THE BEGINING OF SIGNUP FORM -->
 
       <form class="evo-form-text-small" name="form-validation-login" id="form-validation-login">
         <div class="evo-space-small"></div>
@@ -254,94 +254,87 @@
 
 
 
-  
+      
+      <!-- THIS IS THE BEGINING OF FOCUSED LINE SIGNUP FORM -->
+
       <form class="evo-form-text-small" name="form-validation-login-line" id="form-validation-login-line">
         <div class="evo-space-small"></div>
 
-          <div class="row">
-            <div class="col-xs-12">
-              <h4 class="evo-text">Email</h4>
-            </div>
-          </div>
-
-          <div class="row">
-            <!-- error message -->
-            <div class="col-xs-12">
-              <span class="evo-text-small">
-                <h4 id="email1_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
-              </span>
-              <div class="evo-space-smallest"></div>
-            </div>
-          </div>
 
           <div class="row">
 
             <!-- input field -->
             <div class="col-xs-12 col-sm-8">
-              <input class="focus-border-color" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="email" name="email_login_line" id="email1" placeholder="your@email.com">
+
+              <input class="inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" for="email1" name="email_login_line" id="email1" required>
+              <span class="floating-label evo-text-big evo-gray">Email</span>
             </div>
 
-            <div class="evo-space-small"></div>
-          </div>
-
-
-
-
-          <div class="row">
             <div class="col-xs-12">
-              <h4 class="evo-text">Username</h4>
-            </div>
-          </div>
-
-          <div class="row">
-            <!-- error message -->
-            <div class="col-xs-12">
+              <!-- email error message -->
               <span class="evo-text-small">
-                <h4 id="username1_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
+                <h4 id="email1_error_login_line" class="evo-gray evo-text-small"></h4>
               </span>
               <div class="evo-space-smallest"></div>
             </div>
-          </div>
+
+            <div class="evo-space-small"></div>
+
+          </div> <!-- row -->
+
+
+
 
           <div class="row">
 
             <!-- input field -->
             <div class="col-xs-12 col-sm-8">
-              <input class="focus-border-color" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" name="username_login_line" id="username1" placeholder="username">
+              <input class="inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" name="username_login_line" id="username1" required>
+              <span class="floating-label evo-text-big evo-gray">Username</span>
+            </div>
+
+            <div class="col-xs-12">
+              <!-- username error message -->
+              <span class="evo-text-small">
+                <h4 id="username1_error_login_line" class="evo-gray evo-text-small"></h4>
+              </span>
             </div>
 
             <div class="evo-space-small"></div>
-          </div>
+
+          </div> <!-- row -->
 
           
 
 
           <div class="row">
-            <div class="col-xs-6">
-              <h4 class="evo-text">Password</h4>
-            </div>
-
-            <div class="col-xs-6 col-sm-2 text-right">
+            <div class="col-sm-8 text-right">
               <div class="evo-space-smallest"></div>
               <a href="#" onclick="return toggle_password_line('password1');"><h4 id="showhideline" class="evo-text-4-bold-caps evo-gray">show</h4></a>
             </div>
           </div>
 
-
-          <div class="row">
-            
-            <div class="col-xs-12">
-              <span class="evo-text-small">
-                <h4 id="password1_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
-              </span>
-              <div class="evo-space-smallest"></div>
-            </div>
-          </div>
       
 
           <div class="row">
+
             <div class="col-xs-12 col-sm-8">
-              <input class="password1 focus-border-color" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="password" for="password1" name="password1_login" id="password1" placeholder="password">
+              <input class="password1 inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="password" for="password1" name="password_login_line" id="password1" required>
+              <span class="floating-label evo-text-big evo-gray">Password</span>
+
+
+              <div class="row">
+                <!-- password error message -->
+                <div class="col-xs-12">
+                  <div class="evo-space-smallest"></div>
+                    <span class="evo-text-small">
+                      <h4 id="password1_error_login_line" class="evo-gray evo-text-small"></h4>
+                    </span>
+                  <div class="evo-space-smallest"></div>
+                </div>
+              </div>
+  
+              <!-- bulleted error messages -->
               <ul class="evo-list-bullets-smaller helper-text-1">
                 <li class="length">8 characters minimum</li>
                 <li class="lowercase">One lowercase character</li>
@@ -351,7 +344,9 @@
               </ul>
             </div> 
             <div class="evo-space-small"></div>
-          </div>
+
+          </div> <!-- row -->
+
 
           
           <div class="row">
@@ -380,13 +375,15 @@
 
       </form>
 
+      <!-- THIS IS THE END OF FOCUSED LINE SIGNUP FORM -->
+
               
 <!-- end pattern -->
 
 
   </div> <!-- column -->
 
-<!-- END FORM PASSWORD 1 -->
+<!-- END FORM SIMPLE SIGNUP 2 -->
 
 
 </div> <!-- row -->
