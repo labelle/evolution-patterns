@@ -84,8 +84,8 @@ function toggle_password(target){
     charLength: document.querySelector('.helper-text .length'),
     lowercase: document.querySelector('.helper-text .lowercase'),
     uppercase: document.querySelector('.helper-text .uppercase'),
-    number: document.querySelector('.helper-text .number'),
-    specialchar: document.querySelector('.helper-text .specialchar')
+    number: document.querySelector('.helper-text .number')
+    // specialchar: document.querySelector('.helper-text .specialchar')
   };
   
   var pattern = {
@@ -114,14 +114,14 @@ function toggle_password(target){
       if( regex.test(password.value) ) {
         return true;
       }
-    }, 
-    specialchar: function() {
-      var regex = /^(?=.*[_\W]).+$/; // Special character pattern
+    } 
+    // specialchar: function() {
+    //   var regex = /^(?=.*[_\W]).+$/; 
 
-      if( regex.test(password.value) ) {
-        return true;
-      }
-    }   
+    //   if( regex.test(password.value) ) {
+    //     return true;
+    //   }
+    // }   
   };
   
   // Listen for keyup action on password field
@@ -139,14 +139,14 @@ function toggle_password(target){
     patternTest( pattern.number(), helperText.number );
 
     // Check that password contains a special character
-    patternTest( pattern.specialchar(), helperText.specialchar );
+    // patternTest( pattern.specialchar(), helperText.specialchar );
     
     // Check that all requirements are fulfilled
     if( hasClass(helperText.charLength, 'valid') &&
         hasClass(helperText.lowercase, 'valid') && 
         hasClass(helperText.uppercase, 'valid') && 
-        hasClass(helperText.number, 'valid') &&
-        hasClass(helperText.specialchar, 'valid') 
+        hasClass(helperText.number, 'valid') 
+        // hasClass(helperText.specialchar, 'valid') 
     ) {
       addClass(password.parentElement, 'valid');
     }
@@ -212,6 +212,9 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
     var e = document.forms["form-validation-login-line"]["email1"].value;
     var u = document.forms["form-validation-login-line"]["username1"].value;
     var p = document.forms["form-validation-login-line"]["password1"].value;
+    var t = document.forms["form-validation-login-line"].checkbox10.checked;
+
+    console.log(t);
 
 
     var submit = true;
@@ -224,8 +227,13 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
     }
      
 
-    if (u.length < 8 || u.length > 15) {
-        usernameErrorLine = "Please enter between 8 and 15 characters";
+    if (u.length < 8) {
+        usernameErrorLine = "8 or more characters";
+        document.getElementById("username1_error_login_line").innerHTML = usernameErrorLine;
+        submit = false;
+
+    } else if (u.length > 100) {
+        usernameErrorLine = "Way too many characters";
         document.getElementById("username1_error_login_line").innerHTML = usernameErrorLine;
         submit = false;
     }
@@ -235,20 +243,22 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
     if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/.test(p)) {
         passwordLengthLine = "Please match all the bullets listed below";
         document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
+        // document.getElementById("password1").style.border="1px solid #ec008c";
         submit = false;
 
     }
 
-    // if(/^[a-zA-Z0-9- ]*$/.test(p) == false) {
-    //   alert('Your search string contains illegal characters.');
-    // }
+    if(/^(?=.*[_\W]).+$/.test(p)) {
+        passwordLengthLine = "No special characters allowed";
+        document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
+        submit = false;
+    }
 
-    // if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/.test(p)) {
-    //     passwordLengthLine = "special character missing";
-    //     document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
-    //     submit = false;
-
-    // }
+    if(t !== true) {
+        checkboxErrorLine = "Please select the checkbox above";
+        document.getElementById("checkbox1_error_login_line").innerHTML = checkboxErrorLine;
+        submit = false;
+    } 
 
 
     return submit;
@@ -256,11 +266,18 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
 
 function removeWarningLogin() {
     document.getElementById(this.id + "_error_login_line").innerHTML = "";
+
+    var t = document.forms["form-validation-login-line"].checkbox10.checked;
+
+    if(t == true) {
+      document.getElementById("checkbox1_error_login_line").innerHTML = "";
+    }
 }
 
 document.getElementById("email1").onkeyup = removeWarningLogin;
 document.getElementById("username1").onkeyup = removeWarningLogin;
 document.getElementById("password1").onkeyup = removeWarningLogin;
+// document.getElementById("checkbox1").onkeyup = removeWarningLogin;
 
 
 
@@ -292,8 +309,8 @@ function toggle_password_line(target){
     charLength: document.querySelector('.helper-text-1 .length'),
     lowercase: document.querySelector('.helper-text-1 .lowercase'),
     uppercase: document.querySelector('.helper-text-1 .uppercase'),
-    number: document.querySelector('.helper-text-1 .number'),
-    specialchar: document.querySelector('.helper-text-1 .specialchar')
+    number: document.querySelector('.helper-text-1 .number')
+    // specialchar: document.querySelector('.helper-text-1 .specialchar')
   };
   
   var pattern = {
@@ -322,14 +339,14 @@ function toggle_password_line(target){
       if( regex.test(password1.value) ) {
         return true;
       }
-    },
-    specialchar: function() {
-      var regex = /^(?=.*[_\W]).+$/; // Special character pattern
+    }
+    // specialchar: function() {
+    //   var regex = /^(?=.*[_\W]).+$/; 
 
-      if( regex.test(password1.value) ) {
-        return true;
-      }
-    }    
+    //   if( regex.test(password1.value) ) {
+    //     return true;
+    //   }
+    // }    
   };
   
   // Listen for keyup action on password field
@@ -347,14 +364,14 @@ function toggle_password_line(target){
     patternTest( pattern.number(), helperText.number );
 
     // Check that password contains a special character
-    patternTest( pattern.specialchar(), helperText.specialchar );
+    // patternTest( pattern.specialchar(), helperText.specialchar );
     
     // Check that all requirements are fulfilled
     if( hasClass(helperText.charLength, 'valid') &&
         hasClass(helperText.lowercase, 'valid') && 
         hasClass(helperText.uppercase, 'valid') && 
-        hasClass(helperText.number, 'valid') &&
-        hasClass(helperText.specialchar, 'valid')
+        hasClass(helperText.number, 'valid') 
+        // hasClass(helperText.specialchar, 'valid')
     ) {
       addClass(password1.parentElement, 'valid');
     }
