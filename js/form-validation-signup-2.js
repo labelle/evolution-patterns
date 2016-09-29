@@ -248,7 +248,7 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
 
     }
 
-    if(/^(?=.*[_\W]).+$/.test(p)) {
+    if (/^(?=.*[_\W]).+$/.test(p)) {
         passwordLengthLine = "No special characters allowed";
         document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
         submit = false;
@@ -374,9 +374,16 @@ function toggle_password_line(target){
         // hasClass(helperText.specialchar, 'valid')
     ) {
       addClass(password1.parentElement, 'valid');
+        var secure = $('ul.helper-text-1 li.secure').val('');
+        secure.empty();
+        $("ul.helper-text-1 li").fadeOut('fast');
+        $("ul.helper-text-1").append("<li class='secure evo-cmy-green evo-text-small' style='background: none; list-style-position: inside; padding-left:0;'>Your password is more secure!</li>");
     }
     else {
       removeClass(password1.parentElement, 'valid');
+        $("ul.helper-text-1 li.secure").remove();
+        $("ul.helper-text-1 li").fadeIn();
+
     }
   });
 
@@ -415,8 +422,11 @@ function toggle_password_line(target){
       new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className); 
     }
   }
+
   
 })();
 
 // THIS IS THE END OF FOCUSED LINE SIGNUP FORM
+
+
 
