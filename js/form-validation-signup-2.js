@@ -6,38 +6,50 @@ document.getElementById("form-validation-login").onsubmit = function () {
     var e = document.forms["form-validation-login"]["email"].value;
     var u = document.forms["form-validation-login"]["username"].value;
     var p = document.forms["form-validation-login"]["password"].value;
+    var t = document.forms["form-validation-login"].checkbox11.checked;
 
-    var pattern = /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+    console.log(t);
 
     var submit = true;
     
 
-    if (e == null || e == "") {
-        emailError = "Please enter your email";
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e)) {  
+        emailError = "Your email is not valid";
         document.getElementById("email_error_login").innerHTML = emailError;
         submit = false;
     }
+     
 
-    if (u == null || u == "") {
-        usernameError = "Please enter your username";
+    if (u.length < 8) {
+        usernameError = "8 or more characters";
+        document.getElementById("username_error_login").innerHTML = usernameError;
+        submit = false;
+
+    } else if (u.length > 100) {
+        usernameError = "Way too many characters";
         document.getElementById("username_error_login").innerHTML = usernameError;
         submit = false;
     }
 
 
-    if (p == null || p == "") {
-        passwordError = "Please enter your password";
+    if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/.test(p)) {
+        passwordError = "Please match all the bullets listed below";
         document.getElementById("password_error_login").innerHTML = passwordError;
+        // document.getElementById("password1").style.border="1px solid #ec008c";
         submit = false;
 
-    } else if (p !== pattern.test(p)) {
-        passwordLength = "Please match all the bullets listed below";
-        document.getElementById("password_error_login").innerHTML = passwordLength;
-        submit = false;
+    }
 
-    } else {
-        passwordSuccess = "Thank you."
-        document.getElementById("password_error_login").innerHTML = passwordSuccess;
+    if (/^(?=.*[_\W]).+$/.test(p)) {
+        passwordLength = "No special characters allowed";
+        document.getElementById("password_error_login_line").innerHTML = passwordLength;
+        submit = false;
+    }
+
+    if(t !== true) {
+        checkboxErrorLine = "Please select the checkbox above";
+        document.getElementById("checkbox_error_login").innerHTML = checkboxErrorLine;
+        submit = false;
     }
 
 
@@ -46,6 +58,12 @@ document.getElementById("form-validation-login").onsubmit = function () {
 
 function removeWarningLogin() {
     document.getElementById(this.id + "_error_login").innerHTML = "";
+
+    var t = document.forms["form-validation-login"].checkbox11.checked;
+
+    if(t == true) {
+      document.getElementById("checkbox_error_login").innerHTML = "";
+    }
 }
 
 document.getElementById("email").onkeyup = removeWarningLogin;

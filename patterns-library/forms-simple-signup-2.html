@@ -146,7 +146,7 @@
           <div class="row">
 
             <!-- input field -->
-            <div class="col-xs-12 col-sm-8">
+            <div class="col-xs-12 col-md-8">
               <input class="focus-border-color" type="email" name="email_login" id="email" placeholder="your@email.com">
             </div>
 
@@ -175,7 +175,7 @@
           <div class="row">
 
             <!-- input field -->
-            <div class="col-xs-12 col-sm-8">
+            <div class="col-xs-12 col-md-8">
               <input class="focus-border-color" type="text" name="username_login" id="username" placeholder="username">
             </div>
 
@@ -190,7 +190,7 @@
               <h4 class="evo-text">Password</h4>
             </div>
 
-            <div class="col-xs-6 col-sm-2 text-right">
+            <div class="col-xs-6 col-md-2 text-right">
               <div class="evo-space-smallest"></div>
               <a href="#" onclick="return toggle_password('password');"><h4 id="showhide" class="evo-text-4-bold-caps evo-gray">show</h4></a>
             </div>
@@ -209,9 +209,10 @@
       
 
           <div class="row">
-            <div class="col-xs-12 col-sm-8">
+            <div class="col-xs-12 col-md-8">
               <input class="password focus-border-color" type="password" for="password" name="password_login" id="password" placeholder="password">
                 <ul class="evo-list-bullets-smaller helper-text">
+                  <div class="evo-space-smallest"></div>
                   <li class="length">8 characters minimum</li>
                   <li class="lowercase">One lowercase character</li>
                   <li class="uppercase">One uppercase character</li>
@@ -226,22 +227,43 @@
           <div class="row">
             <div class="col-xs-12">
               <div class="evo-form-7-checkbox">
-                <input type="checkbox" id="checkbox11"><label for="checkbox11">I accept the <a href="">terms</a> and <a href="">conditions</a>.</label> 
+                <input type="checkbox" name="checkbox11" id="checkbox11"><label for="checkbox11">I accept the <a href="">terms</a> and <a href="">conditions</a>.</label> 
               </div> 
             </div>
-            <div class="evo-space-small"></div>
           </div>
 
 
           <div class="row">
-            <div class="col-xs-12 col-sm-5">
-              <a href=""><button class="evo-button-big" type="submit" value="submit" style="background-color: transparent;">Create My Account</button></a>
+            
+            <div class="col-xs-12">
+              <span class="evo-text-small">
+                <h4 id="checkbox_error_login" class="evo-cmy-magenta evo-text-small"></h4>
+              </span>
+              <div class="evo-space-small"></div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            
+            <div class="col-xs-12">
+              <span class="evo-text-small">
+                <h4 id="checkbox_error_login" class="evo-cmy-magenta evo-text-small"></h4>
+              </span>
+              <div class="evo-space-smallest"></div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-8">
+              <a href=""><button class="evo-button-big" type="submit" value="submit" style="background-color: transparent; outline: 0 none;">Create My Account</button></a>
             </div>
             <div class="evo-space-small"></div>
           </div>
 
           <div class="row">
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-8">
               <p class="evo-text-small">Already have an account? <a href="">Sign In </a></p>
             </div> 
             <div class="evo-space"></div>
@@ -251,11 +273,29 @@
 
 
 
+    </div> <!-- column -->
+
+    <!-- END FORM SIMPLE SIGNUP 2 LINE -->
 
 
 
-      
-      <!-- THIS IS THE BEGINING OF FOCUSED LINE SIGNUP FORM -->
+
+
+
+
+    <!-- THIS IS THE BEGINING OF FOCUSED LINE SIGNUP FORM -->
+
+
+    <div class="col-xs-12 col-sm-6">
+
+      <!-- begin header -->
+      <div class="evo-space-small"></div>
+        <div class="evo-space-15"></div>
+          <div class="evo-header-10 evo-no-line">form-simple-signup-2-line</div>
+      <div class="evo-space-5"></div>
+
+      <!-- end header -->
+  
 
       <form class="evo-form-text-small" name="form-validation-login-line" id="form-validation-login-line">
         <div class="evo-space-small"></div>
@@ -310,7 +350,7 @@
 
 
           <div class="row">
-            <div class="col-sm-8 text-right">
+            <div class="col-xs-12 col-md-8 text-right">
               <a href="#" onclick="return toggle_password_line('password1');"><h4 id="showhideline" class="evo-text-4-bold-caps evo-gray">show</h4></a>
             </div>
           </div>
@@ -379,7 +419,7 @@
 
           <div class="row">
             <div class="col-xs-12 col-sm-8">
-              <p class="evo-text-small">Already have an account? <a href="">Sign In </a></p>
+              <p class="evo-text-small">Already have an account? <a href="">Sign In</p></a>
             </div> 
             <div class="evo-space"></div>
           </div>
@@ -388,16 +428,10 @@
 
       <!-- THIS IS THE END OF FOCUSED LINE SIGNUP FORM -->
 
-              
-<!-- end pattern -->
+    </div>
 
 
-  </div> <!-- column -->
-
-<!-- END FORM SIMPLE SIGNUP 2 -->
-
-
-</div> <!-- row -->
+  </div> <!-- row -->
 
 
 </main>
@@ -475,9 +509,13 @@
           <div class="evo-space-15"></div>
       </nav>
 
-    </div><!-- social --> 
+    </div><!-- row --> 
+
+  </div> <!-- column -->
+
 
 </div> <!-- container -->
+
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
