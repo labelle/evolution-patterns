@@ -137,7 +137,7 @@
             <!-- error message -->
             <div class="col-xs-12">
               <span class="evo-text-small">
-                <h4 id="email_error_login" class="evo-cmy-magenta evo-text-small"></h4>
+                <h4 id="email1_error_login" class="evo-cmy-magenta evo-text-small"></h4>
               </span>
               <div class="evo-space-smallest"></div>
             </div>
@@ -147,7 +147,7 @@
 
             <!-- input field -->
             <div class="col-xs-12 col-sm-8">
-              <input class="focus-border-color" type="email" name="email_login" id="email" placeholder="your@email.com">
+              <input class="focus-border-color" type="email" name="email_login" id="email1" placeholder="your@email.com">
             </div>
 
             <div class="evo-space-small"></div>
@@ -165,7 +165,7 @@
             
             <div class="col-xs-12">
               <span class="evo-text-small">
-                <h4 id="password_error_login" class="evo-cmy-magenta evo-text-small"></h4>
+                <h4 id="password1_error_login" class="evo-cmy-magenta evo-text-small"></h4>
               </span>
               <div class="evo-space-smallest"></div>
             </div>
@@ -174,7 +174,7 @@
 
           <div class="row">
             <div class="col-xs-12 col-sm-8">
-              <input class="focus-border-color" type="password" for="password" name="password_login" id="password" placeholder="Password">
+              <input class="focus-border-color" type="password" for="password1" name="password_login" id="password1" placeholder="Password">
             </div>
           </div>
 
@@ -182,7 +182,7 @@
           <div class="row">
             <div class="col-xs-12">
               <div class="evo-space-smallest"></div>
-              <a href="#" onclick="return toggle_password('password');"><h4 id="showhide" class="evo-text-4-bold-caps evo-gray">show</h4></a>
+              <a href="#" onclick="return toggle_password('password1');"><h4 id="showhide" class="evo-text-4-bold-caps evo-gray">show</h4></a>
             </div>
             <div class="evo-space-small"></div>
           </div>
@@ -198,7 +198,7 @@
 
           <div class="row">
             <div class="col-xs-5">
-              <a href=""><button class="evo-button-big" type="submit" value="submit" style="background-color: transparent;">Sign Up</button></a>
+              <a href=""><button class="evo-button-big" type="submit" value="submit" style="background-color: transparent; outline: 0 none;">Sign Up</button></a>
             </div>
             <div class="evo-space-small"></div>
           </div>
@@ -246,65 +246,64 @@
       <form class="evo-form-text-small" name="form-validation-login-line" id="form-validation-login-line">
         <div class="evo-space-small"></div>
 
-          <div class="row">
-            <div class="col-xs-12">
-              <h4 class="evo-text">Email</h4>
-            </div>
-          </div>
-
-          <div class="row">
-            <!-- error message -->
-            <div class="col-xs-12">
-              <span class="evo-text-small">
-                <h4 id="email1_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
-              </span>
-              <div class="evo-space-smallest"></div>
-            </div>
-          </div>
 
           <div class="row">
 
             <!-- input field -->
             <div class="col-xs-12 col-sm-8">
-              <input class="focus-border-color" style="border: 0; border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="email" name="email_login_line" id="email1" placeholder="your@email.com">
+              <input class="inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" for="email2" name="email_login_line" id="email2" required>
+              <span class="floating-label evo-text-big evo-gray">Email</span>
             </div>
 
-            <div class="evo-space-small"></div>
+            <div class="evo-space-smallest"></div>
           </div>
-          
 
 
           <div class="row">
-            <div class="col-xs-12">
-              <h4 class="evo-text">Password</h4>
-            </div>
-          </div>
-
-          <div class="row">
-            
+            <!-- error message -->
             <div class="col-xs-12">
               <span class="evo-text-small">
-                <h4 id="password1_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
+                <h4 id="email2_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
               </span>
-              <div class="evo-space-smallest"></div>
+              <div class="evo-space-small"></div>
             </div>
           </div>
+          
       
 
           <div class="row">
+            <div class="col-xs-12 col-md-8 text-right">
+              <a href="#" onclick="return toggle_password_line('password2');"><h4 id="showhideline" class="evo-text-4-bold-caps evo-gray">show</h4></a>
+            </div>
+          </div>
+
+
+          <div class="row">
             <div class="col-xs-12 col-sm-8">
-              <input class="focus-border-color" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="password" for="password1" name="password_login_line" id="password1" placeholder="Password">
+              <input class="inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="password" for="password2" name="password_login_line" id="password2" required>
+              <span class="floating-label evo-text-big evo-gray">Password</span>
+              <div class="evo-space-smallest"></div>
             </div> 
           </div>
 
 
-          <div class="row">
+          <div class="row">  
+            <div class="col-xs-12">
+              <span class="evo-text-small">
+                <h4 id="password2_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
+              </span>
+              <div class="evo-space-small"></div>
+            </div>
+          </div>
+
+
+<!--           <div class="row">
             <div class="col-xs-12">
               <div class="evo-space-smallest"></div>
-              <a href="#" onclick="return toggle_password_line('password1');"><h4 id="showhideline" class="evo-text-4-bold-caps evo-gray">show</h4></a>
+              <a href="#" onclick="return toggle_password_line('password2');"><h4 id="showhideline" class="evo-text-4-bold-caps evo-gray">show</h4></a>
             </div>
             <div class="evo-space-small"></div>
-          </div>
+          </div> -->
 
           
           <div class="row">
@@ -317,7 +316,7 @@
 
           <div class="row">
             <div class="col-xs-5">
-              <a href=""><button class="evo-button-big" type="submit" value="submit" style="background-color: transparent;">Sign Up</button></a>
+              <a href=""><button class="evo-button-big" type="submit" value="submit" style="background-color: transparent; outline: 0 none;">Sign Up</button></a>
             </div> 
             <div class="evo-space-small"></div>
           </div>
@@ -370,7 +369,7 @@
 
       <!-- THIS IS THE BEGINING OF SIGNUP FORM -->
 
-      <form class="evo-form-text-small" name="form-validation-login" id="form-validation-login">
+      <form class="evo-form-text-small" name="form-validation-login-3" id="form-validation-login-3">
         <div class="evo-space-small"></div>
 
           <div class="row">
@@ -383,7 +382,7 @@
             <!-- error message -->
             <div class="col-xs-12">
               <span class="evo-text-small">
-                <h4 id="email_error_login" class="evo-cmy-magenta evo-text-small"></h4>
+                <h4 id="email3_error_login" class="evo-cmy-magenta evo-text-small"></h4>
               </span>
               <div class="evo-space-smallest"></div>
             </div>
@@ -393,7 +392,7 @@
 
             <!-- input field -->
             <div class="col-xs-12 col-md-8">
-              <input class="focus-border-color" type="email" name="email_login" id="email" placeholder="your@email.com">
+              <input class="focus-border-color" type="email" name="email_login" id="email3" placeholder="your@email.com">
             </div>
 
             <div class="evo-space-small"></div>
@@ -412,7 +411,7 @@
             <!-- error message -->
             <div class="col-xs-12">
               <span class="evo-text-small">
-                <h4 id="username_error_login" class="evo-cmy-magenta evo-text-small"></h4>
+                <h4 id="username3_error_login" class="evo-cmy-magenta evo-text-small"></h4>
               </span>
               <div class="evo-space-smallest"></div>
             </div>
@@ -422,7 +421,7 @@
 
             <!-- input field -->
             <div class="col-xs-12 col-md-8">
-              <input class="focus-border-color" type="text" name="username_login" id="username" placeholder="username">
+              <input class="focus-border-color" type="text" name="username_login" id="username3" placeholder="username">
             </div>
 
             <div class="evo-space-small"></div>
@@ -438,7 +437,7 @@
 
             <div class="col-xs-6 col-md-2 text-right">
               <div class="evo-space-smallest"></div>
-              <a href="#" onclick="return toggle_password('password');"><h4 id="showhide" class="evo-text-4-bold-caps evo-gray">show</h4></a>
+              <a href="#" onclick="return toggle_password_signup('password3');"><h4 id="showhidesignup" class="evo-text-4-bold-caps evo-gray">show</h4></a>
             </div>
           </div>
 
@@ -447,7 +446,7 @@
             
             <div class="col-xs-12">
               <span class="evo-text-small">
-                <h4 id="password_error_login" class="evo-cmy-magenta evo-text-small"></h4>
+                <h4 id="password3_error_login" class="evo-cmy-magenta evo-text-small"></h4>
               </span>
               <div class="evo-space-smallest"></div>
             </div>
@@ -456,7 +455,7 @@
 
           <div class="row">
             <div class="col-xs-12 col-md-8">
-              <input class="password focus-border-color" type="password" for="password" name="password_login" id="password" placeholder="password">
+              <input class="password focus-border-color" type="password" for="password" name="password_login" id="password3" placeholder="password">
                 <ul class="evo-list-bullets-smaller helper-text">
                   <div class="evo-space-smallest"></div>
                   <li class="length">8 characters minimum</li>
@@ -479,22 +478,12 @@
           </div>
 
 
-          <div class="row">
-            
-            <div class="col-xs-12">
-              <span class="evo-text-small">
-                <h4 id="checkbox_error_login" class="evo-cmy-magenta evo-text-small"></h4>
-              </span>
-              <div class="evo-space-small"></div>
-            </div>
-          </div>
-
 
           <div class="row">
             
             <div class="col-xs-12">
               <span class="evo-text-small">
-                <h4 id="checkbox_error_login" class="evo-cmy-magenta evo-text-small"></h4>
+                <h4 id="checkbox3_error_login" class="evo-cmy-magenta evo-text-small"></h4>
               </span>
               <div class="evo-space-smallest"></div>
             </div>
@@ -546,7 +535,7 @@
       <!-- end header -->
   
 
-      <form class="evo-form-text-small" name="form-validation-login-line" id="form-validation-login-line">
+      <form class="evo-form-text-small" name="form-validation-login-4-line" id="form-validation-login-4-line">
         <div class="evo-space-small"></div>
 
 
@@ -555,7 +544,7 @@
             <!-- input field -->
             <div class="col-xs-12 col-md-8">
 
-              <input class="inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" for="email1" name="email_login_line" id="email1" required>
+              <input class="inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" for="email4" name="email_login_line" id="email4" required>
               <span class="floating-label evo-text-big evo-gray">Email</span>
             </div>
 
@@ -563,7 +552,7 @@
               <!-- email error message -->
               <div class="evo-space-smallest"></div>
               <span class="evo-text-small">
-                <h4 id="email1_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
+                <h4 id="email4_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
               </span>
               <div class="evo-space-smallest"></div>
             </div>
@@ -579,7 +568,7 @@
 
             <!-- input field -->
             <div class="col-xs-12 col-md-8">
-              <input class="inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" name="username_login_line" id="username1" required>
+              <input class="inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" name="username_login_line" id="username4" required>
               <span class="floating-label evo-text-big evo-gray">Username</span>
             </div>
 
@@ -587,7 +576,7 @@
               <!-- username error message -->
               <div class="evo-space-smallest"></div>
               <span class="evo-text-small">
-                <h4 id="username1_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
+                <h4 id="username4_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
               </span>
             </div>
 
@@ -600,7 +589,7 @@
 
           <div class="row">
             <div class="col-xs-12 col-md-8 text-right">
-              <a href="#" onclick="return toggle_password_line('password1');"><h4 id="showhideline" class="evo-text-4-bold-caps evo-gray">show</h4></a>
+              <a href="#" onclick="return toggle_password_line('password4');"><h4 id="showhideline" class="evo-text-4-bold-caps evo-gray">show</h4></a>
             </div>
           </div>
 
@@ -609,7 +598,7 @@
           <div class="row">
 
             <div class="col-xs-12 col-md-8">
-              <input class="password1 inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="password" for="password1" name="password_login_line" id="password1" required>
+              <input class="password4 inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="password" for="password4" name="password_login_line" id="password4" required>
               <span class="floating-label evo-text-big evo-gray">Password</span>
 
 
@@ -618,7 +607,7 @@
                 <div class="col-xs-12">
                   <div class="evo-space-smallest"></div>
                     <span class="evo-text-small">
-                      <h4 id="password1_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
+                      <h4 id="password4_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
                     </span>
                   <div class="evo-space-smallest"></div>
                 </div>
@@ -652,7 +641,7 @@
             <!-- checkbox error message -->
             <div class="col-xs-12">
                 <span class="evo-text-small">
-                  <h4 id="checkbox1_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
+                  <h4 id="checkbox4_error_login_line" class="evo-cmy-magenta evo-text-small"></h4>
                 </span>
               <div class="evo-space-small"></div>
             </div>
