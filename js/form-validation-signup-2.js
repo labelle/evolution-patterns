@@ -1,12 +1,12 @@
 
 // THIS IS THE BEGINING OF SIGNUP FORM
 
-document.getElementById("form-validation-login").onsubmit = function () {
+document.getElementById("form-validation-login-3").onsubmit = function () {
 
-    var e = document.forms["form-validation-login"]["email"].value;
-    var u = document.forms["form-validation-login"]["username"].value;
-    var p = document.forms["form-validation-login"]["password"].value;
-    var t = document.forms["form-validation-login"].checkbox11.checked;
+    var e = document.forms["form-validation-login-3"]["email3"].value;
+    var u = document.forms["form-validation-login-3"]["username3"].value;
+    var p = document.forms["form-validation-login-3"]["password3"].value;
+    var t = document.forms["form-validation-login-3"].checkbox11.checked;
 
     console.log(t);
 
@@ -15,26 +15,26 @@ document.getElementById("form-validation-login").onsubmit = function () {
 
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e)) {  
         emailError = "Your email is not valid";
-        document.getElementById("email_error_login").innerHTML = emailError;
+        document.getElementById("email3_error_login").innerHTML = emailError;
         submit = false;
     }
      
 
     if (u.length < 8) {
         usernameError = "8 or more characters";
-        document.getElementById("username_error_login").innerHTML = usernameError;
+        document.getElementById("username3_error_login").innerHTML = usernameError;
         submit = false;
 
     } else if (u.length > 100) {
         usernameError = "Way too many characters";
-        document.getElementById("username_error_login").innerHTML = usernameError;
+        document.getElementById("username3_error_login").innerHTML = usernameError;
         submit = false;
     }
 
 
     if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/.test(p)) {
         passwordError = "Please match all the bullets listed below";
-        document.getElementById("password_error_login").innerHTML = passwordError;
+        document.getElementById("password3_error_login").innerHTML = passwordError;
         // document.getElementById("password1").style.border="1px solid #ec008c";
         submit = false;
 
@@ -42,13 +42,13 @@ document.getElementById("form-validation-login").onsubmit = function () {
 
     if (/^(?=.*[_\W]).+$/.test(p)) {
         passwordLength = "No special characters allowed";
-        document.getElementById("password_error_login_line").innerHTML = passwordLength;
+        document.getElementById("password3_error_login_line").innerHTML = passwordLength;
         submit = false;
     }
 
     if(t !== true) {
         checkboxErrorLine = "Please select the checkbox above";
-        document.getElementById("checkbox_error_login").innerHTML = checkboxErrorLine;
+        document.getElementById("checkbox3_error_login").innerHTML = checkboxErrorLine;
         submit = false;
     }
 
@@ -56,28 +56,28 @@ document.getElementById("form-validation-login").onsubmit = function () {
     return submit;
 }
 
-function removeWarningLogin() {
+function removeWarningSignup() {
     document.getElementById(this.id + "_error_login").innerHTML = "";
 
-    var t = document.forms["form-validation-login"].checkbox11.checked;
+    var t = document.forms["form-validation-login-3"].checkbox11.checked;
 
     if(t == true) {
-      document.getElementById("checkbox_error_login").innerHTML = "";
+      document.getElementById("checkbox3_error_login").innerHTML = "";
     }
 }
 
-document.getElementById("email").onkeyup = removeWarningLogin;
-document.getElementById("username").onkeyup = removeWarningLogin;
-document.getElementById("password").onkeyup = removeWarningLogin;
+document.getElementById("email3").onkeyup = removeWarningSignup;
+document.getElementById("username3").onkeyup = removeWarningSignup;
+document.getElementById("password3").onkeyup = removeWarningSignup;
 
 
 
 
 // show or hide password
-function toggle_password(target){
+function toggle_password_signup(target){
     var d = document;
     var tag = d.getElementById(target);
-    var tag2 = d.getElementById("showhide");
+    var tag2 = d.getElementById("showhidesignup");
 
     if (tag2.innerHTML == 'show'){
         tag.setAttribute('type', 'text');   
@@ -225,12 +225,12 @@ function toggle_password(target){
 
 // THIS IS THE BEGINING OF FOCUSED LINE SIGNUP FORM
 
-document.getElementById("form-validation-login-line").onsubmit = function () {
+document.getElementById("form-validation-login-4-line").onsubmit = function () {
 
-    var e = document.forms["form-validation-login-line"]["email1"].value;
-    var u = document.forms["form-validation-login-line"]["username1"].value;
-    var p = document.forms["form-validation-login-line"]["password1"].value;
-    var t = document.forms["form-validation-login-line"].checkbox10.checked;
+    var e = document.forms["form-validation-login-4-line"]["email4"].value;
+    var u = document.forms["form-validation-login-4-line"]["username4"].value;
+    var p = document.forms["form-validation-login-4-line"]["password4"].value;
+    var t = document.forms["form-validation-login-4-line"].checkbox10.checked;
 
     console.log(t);
 
@@ -240,19 +240,19 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
 
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e)) {  
         emailErrorLine = "Your email is not valid";
-        document.getElementById("email1_error_login_line").innerHTML = emailErrorLine;
+        document.getElementById("email4_error_login_line").innerHTML = emailErrorLine;
         submit = false;
     }
      
 
     if (u.length < 8) {
         usernameErrorLine = "8 or more characters";
-        document.getElementById("username1_error_login_line").innerHTML = usernameErrorLine;
+        document.getElementById("username4_error_login_line").innerHTML = usernameErrorLine;
         submit = false;
 
     } else if (u.length > 100) {
         usernameErrorLine = "Way too many characters";
-        document.getElementById("username1_error_login_line").innerHTML = usernameErrorLine;
+        document.getElementById("username4_error_login_line").innerHTML = usernameErrorLine;
         submit = false;
     }
 
@@ -260,7 +260,7 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
 
     if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/.test(p)) {
         passwordLengthLine = "Please match all the bullets listed below";
-        document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
+        document.getElementById("password4_error_login_line").innerHTML = passwordLengthLine;
         // document.getElementById("password1").style.border="1px solid #ec008c";
         submit = false;
 
@@ -268,13 +268,13 @@ document.getElementById("form-validation-login-line").onsubmit = function () {
 
     if (/^(?=.*[_\W]).+$/.test(p)) {
         passwordLengthLine = "No special characters allowed";
-        document.getElementById("password1_error_login_line").innerHTML = passwordLengthLine;
+        document.getElementById("password4_error_login_line").innerHTML = passwordLengthLine;
         submit = false;
     }
 
     if(t !== true) {
         checkboxErrorLine = "Please select the checkbox above";
-        document.getElementById("checkbox1_error_login_line").innerHTML = checkboxErrorLine;
+        document.getElementById("checkbox4_error_login_line").innerHTML = checkboxErrorLine;
         submit = false;
     } 
 
@@ -288,13 +288,13 @@ function removeWarningLogin() {
     var t = document.forms["form-validation-login-line"].checkbox10.checked;
 
     if(t == true) {
-      document.getElementById("checkbox1_error_login_line").innerHTML = "";
+      document.getElementById("checkbox4_error_login_line").innerHTML = "";
     }
 }
 
-document.getElementById("email1").onkeyup = removeWarningLogin;
-document.getElementById("username1").onkeyup = removeWarningLogin;
-document.getElementById("password1").onkeyup = removeWarningLogin;
+document.getElementById("email4").onkeyup = removeWarningLogin;
+document.getElementById("username4").onkeyup = removeWarningLogin;
+document.getElementById("password4").onkeyup = removeWarningLogin;
 // document.getElementById("checkbox1").onkeyup = removeWarningLogin;
 
 
@@ -321,7 +321,7 @@ function toggle_password_line(target){
 
 // HELPER TEXT 1
 (function(){
-  var password1 = document.querySelector('.password1');
+  var password1 = document.querySelector('.password4');
   
   var helperText = {
     charLength: document.querySelector('.helper-text-1 .length'),

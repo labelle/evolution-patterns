@@ -2499,6 +2499,24 @@ input.inputText:focus {
   -moz-transition: 0.5s ease all;
   -webkit-transition: 0.5s ease all; }
 
+textarea:focus ~ .floating-label,
+textarea:not(:focus):valid ~ .floating-label {
+  top: -20px;
+  bottom: 10px;
+  color: #00aeef;
+  left: 15px;
+  font-size: 14px;
+  opacity: 1; }
+
+textarea:not(:focus):valid ~ .floating-label {
+  color: #808080; }
+
+textarea.inputText:focus {
+  border-bottom: 1px solid #00aeef !important;
+  transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all; }
+
 .floating-label {
   position: absolute;
   pointer-events: none;

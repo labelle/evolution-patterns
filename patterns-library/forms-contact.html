@@ -228,8 +228,6 @@
 
     <div class="row">     
       <div class="col-xs-12 col-sm-6">
-          <h4 class="evo-text">Name</h4>
-          <div class="evo-space-smallest"></div>
 
           <div class="row">
             <!-- error message -->
@@ -241,15 +239,15 @@
             </div>
           </div>
 
-          <input class="focus-border-color" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" name="name_contact_line" id="name1" placeholder="Name">
+          <input class="inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" name="name_contact_line" id="name1" required>
+          <span class="floating-label evo-text-big evo-gray">Name</span> 
+      
           <div class="evo-space-smaller"></div>
       </div>
     
 
 
       <div class="col-xs-12 col-sm-6">
-          <h4 class="evo-text">Email</h4>
-          <div class="evo-space-smallest"></div>
 
           <div class="row">
             <!-- error message -->
@@ -261,7 +259,12 @@
             </div>
           </div>
 
-          <input class="focus-border-color" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="email" name="email_contact_line" id="email1" placeholder="Email">
+          <input class="inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" name="email_contact_line" id="email1" required>
+          <span class="floating-label evo-text-big evo-gray">Email</span>
+
+<!--           <input class="password4 inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="password" for="password4" name="password_login_line" id="password4" required>
+          <span class="floating-label evo-text-big evo-gray">Password</span> -->
+
           <div class="evo-space-small"></div>
       </div>
     </div>
@@ -270,8 +273,6 @@
 
     <div class="row">
       <div class="col-xs-12">
-          <h4 class="evo-text">Message</h4>
-          <div class="evo-space-smallest"></div>
 
           <div class="row">
             <!-- error message -->
@@ -283,7 +284,9 @@
             </div>
           </div>
 
-          <textarea class="focus-border-color" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" name="message_contact_line" id="message1" placeholder="Message" rows="8"></textarea>
+          <textarea class="inputText" style="border: 0; border-bottom: 1px solid gray; outline: 0; border-radius: 0;" type="text" name="message_contact_line" id="message1" required rows="8"></textarea>
+          <span class="floating-label evo-text-big evo-gray">Message</span> 
+
           <div class="evo-space-small"></div>
       </div>
     </div>
