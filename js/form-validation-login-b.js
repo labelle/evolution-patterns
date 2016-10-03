@@ -15,9 +15,6 @@ document.getElementById("form-validation-login-b").onsubmit = function () {
         document.getElementById("password_error_login_b").innerHTML = passwordLength;
         submit = false;
 
-    } else {
-        passwordSuccess = "Thank you."
-        document.getElementById("password_error_login_b").innerHTML = passwordSuccess;
     }
 
 
@@ -40,6 +37,7 @@ document.getElementById("form-validation-login-b-line").onsubmit = function () {
 
     var p = document.forms["form-validation-login-b-line"]["password1"].value;
 
+
     var submit = true;
     
 
@@ -48,15 +46,13 @@ document.getElementById("form-validation-login-b-line").onsubmit = function () {
         document.getElementById("password1_error_login_b_line").innerHTML = passwordError;
         submit = false;
 
+
     } else if (p.length < 5) {
         passwordLength = "Your password must contain minimum 5 characters"
         document.getElementById("password1_error_login_b_line").innerHTML = passwordLength;
         submit = false;
 
-    } else {
-        passwordSuccess = "Thank you."
-        document.getElementById("password1_error_login_b_line").innerHTML = passwordSuccess;
-    }
+    } 
 
 
     return submit;
