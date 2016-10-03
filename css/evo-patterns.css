@@ -2558,6 +2558,14 @@ ul.helper-text-1 {
   width: 23px;
   height: 23px; }
 
+#input_img_box {
+  position: absolute;
+  cursor: pointer;
+  bottom: 5px;
+  right: 10px;
+  width: 23px;
+  height: 23px; }
+
 textarea.focus-border-color:focus, input.focus-border-color:focus, input[type].focus-border-color:focus, .uneditable-input.focus-border-color:focus {
   border-color: rgba(0, 174, 239, 0.8) !important;
   outline: 0 none; }

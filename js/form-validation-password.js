@@ -169,13 +169,14 @@ function toggle_password(target){
 
 
 
-// show or hide password with eye-book-gray.svg
+// show or hide password with eye-book-gray.svg in line field
 function toggle_password_eye(target){
     var d = document;
     var tag = d.getElementById(target);
     var tag2 = d.getElementById("showhidegrayeye");
 
     if (tag2.innerHTML == '<img src="https://labelle.github.io/evolution-patterns/icons-gray/book-gray/eye-slash-book-gray.svg" id="input_img">'){
+        console.log("it's input_img");
         tag.setAttribute('type', 'text');   
         tag2.innerHTML = '<img src="https://labelle.github.io/evolution-patterns/icons-gray/book-gray/eye-book-gray.svg" id="input_img">';
 
@@ -186,4 +187,27 @@ function toggle_password_eye(target){
 
     return false;
 }
+
+
+
+// show or hide password with eye-book-gray.svg in box field
+function toggle_password_eye_box(target){
+    var d = document;
+    var tag = d.getElementById(target);
+    var tag3 = d.getElementById("showhidegrayeyebox");
+
+    if (tag3.innerHTML == '<img src="https://labelle.github.io/evolution-patterns/icons-gray/book-gray/eye-slash-book-gray.svg" id="input_img_box">'){
+        tag.setAttribute('type', 'text');   
+        tag3.innerHTML = '<img src="https://labelle.github.io/evolution-patterns/icons-gray/book-gray/eye-book-gray.svg" id="input_img_box">';
+
+    } else {
+        tag.setAttribute('type', 'password');   
+        tag3.innerHTML = '<img src="https://labelle.github.io/evolution-patterns/icons-gray/book-gray/eye-slash-book-gray.svg" id="input_img_box">';
+    }
+
+    return false;
+}
+
+
+
 
