@@ -16,9 +16,12 @@ document.getElementById("form-validation").onsubmit = function () {
         emailError = "Please enter your email";
         document.getElementById("email_error").innerHTML = emailError;
         submit = false;
+
     } else {
-        emailSuccess = "Thank you."
-        document.getElementById("email_error").innerHTML = emailSuccess;
+        var success = $('#form-validation').val('');
+        success.empty();
+        $("#form-validation").append("<div class='secure evo-cmy-magenta evo-text-small'>Thank you! You will be notified.</div>");
+        submit = false;
     }
 
 
@@ -68,8 +71,10 @@ document.getElementById("form-validation-line").onsubmit = function () {
         document.getElementById("email1_error_line").innerHTML = emailError;
         submit = false;
     } else {
-        emailSuccess = "Thank you."
-        document.getElementById("email1_error_line").innerHTML = emailSuccess;
+        var success = $('#form-validation-line').val('');
+        success.empty();
+        $("#form-validation-line").append("<div class='secure evo-cmy-magenta evo-text-small'>Thank you! You will be notified.</div>");
+        submit = false;
     }
 
 
@@ -100,9 +105,12 @@ document.getElementById("form-validation-header").onsubmit = function () {
         emailError = "Please enter your email";
         document.getElementById("email2_error_header").innerHTML = emailError;
         submit = false;
+
     } else {
-        emailSuccess = "Thank you."
-        document.getElementById("email2_error_header").innerHTML = emailSuccess;
+        var success = $('#form-validation-header').val('');
+        success.empty();
+        $("#form-validation-header").append("<div class='secure evo-cmy-magenta evo-text-small'>Thank you! You will be notified.</div>");
+        submit = false;
     }
 
 
