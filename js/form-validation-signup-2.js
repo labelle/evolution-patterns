@@ -8,7 +8,6 @@ document.getElementById("form-validation-login-3").onsubmit = function () {
     var p = document.forms["form-validation-login-3"]["password3"].value;
     var t = document.forms["form-validation-login-3"].checkbox11.checked;
 
-    console.log(t);
 
     var submit = true;
     
@@ -232,7 +231,6 @@ document.getElementById("form-validation-login-4-line").onsubmit = function () {
     var p = document.forms["form-validation-login-4-line"]["password4"].value;
     var t = document.forms["form-validation-login-4-line"].checkbox10.checked;
 
-    console.log(t);
 
 
     var submit = true;
@@ -287,7 +285,7 @@ document.getElementById("form-validation-login-4-line").onsubmit = function () {
 function removeWarningLogin() {
     document.getElementById(this.id + "_error_login_line").innerHTML = "";
 
-    var t = document.forms["form-validation-login-line"].checkbox10.checked;
+    var t = document.forms["form-validation-login-4-line"].checkbox10.checked;
 
     if(t == true) {
       document.getElementById("checkbox4_error_login_line").innerHTML = "";
