@@ -269,6 +269,8 @@ document.getElementById("form-validation-login-4-line").onsubmit = function () {
     if (/^(?=.*[_\W]).+$/.test(p)) {
         passwordLengthLine = "No special characters allowed";
         document.getElementById("password4_error_login_line").innerHTML = passwordLengthLine;
+        var secure = $('ul.helper-text-1 li.secure').val('');
+        secure.empty();
         submit = false;
     }
 
