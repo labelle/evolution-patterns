@@ -1,0 +1,30 @@
+
+<svg width="400px" height="200px" viewBox="0 0 400 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <rect id="Rectangle-path" stroke="#00AEEF" stroke-width="3" fill="none" x="1.5" y="1.583" width="396.667" height="196.587"></rect>
+    <circle id="Oval" stroke="#00AEEF" stroke-width="3" fill="none" cx="64" cy="98" r="15"></circle>
+    <circle id="Oval-Copy" stroke="#00AEEF" stroke-width="3" fill="none" cx="153" cy="98" r="15"></circle>
+    <circle id="Oval-Copy-2" stroke="#00AEEF" stroke-width="3" fill="none" cx="242" cy="98" r="15"></circle>
+    <circle id="Oval-Copy-3" stroke="#00AEEF" stroke-width="3" fill="none" cx="331" cy="98" r="15"></circle>
+    <path d="M79.5,98.5 L136.508771,98.5" id="Line" stroke="#00AEEF" stroke-width="3" stroke-linecap="square" fill="none"></path>
+    <path d="M63,113 L63,138.504901" id="Line-Copy-3" stroke="#00AEEF" stroke-width="3" stroke-linecap="square" fill="none"></path>
+    <path d="M153,56 L153,81.5049015" id="Line-Copy-4" stroke="#00AEEF" stroke-width="3" stroke-linecap="square" fill="none"></path>
+    <path d="M242,115 L242,140.504901" id="Line-Copy-5" stroke="#00AEEF" stroke-width="3" stroke-linecap="square" fill="none"></path>
+    <path d="M331,56 L331,81.5049015" id="Line-Copy-6" stroke="#00AEEF" stroke-width="3" stroke-linecap="square" fill="none"></path>
+    <path d="M168.5,98.5 L225.508771,98.5" id="Line-Copy" stroke="#00AEEF" stroke-width="3" stroke-linecap="square" fill="none"></path>
+    <path d="M257.5,98.5 L314.508771,98.5" id="Line-Copy-2" stroke="#00AEEF" stroke-width="3" stroke-linecap="square" fill="none"></path>
+    <text id="1980" stroke="none" fill="none" font-family="Arial-BoldMT, Arial" font-size="18.2000008" font-weight="bold">
+        <tspan x="42" y="171" fill="#00BBF1">1980</tspan>
+    </text>
+    <text id="1990" stroke="none" fill="none" font-family="Arial-BoldMT, Arial" font-size="18.2000008" font-weight="bold">
+        <tspan x="132" y="44" fill="#00BBF1">1990</tspan>
+    </text>
+    <text id="2000" stroke="none" fill="none" font-family="Arial-BoldMT, Arial" font-size="18.2000008" font-weight="bold">
+        <tspan x="221" y="171" fill="#00BBF1">2000</tspan>
+    </text>
+    <text id="2010" stroke="none" fill="none" font-family="Arial-BoldMT, Arial" font-size="18.2000008" font-weight="bold">
+        <tspan x="309" y="44" fill="#00BBF1">2010</tspan>
+    </text>
+</svg>
