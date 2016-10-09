@@ -1,36 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="400px" height="200px" viewBox="0 0 400 200" enable-background="new 0 0 400 200" xml:space="preserve">
-<title>Group 4</title>
-<desc>Created with Sketch.</desc>
-<polyline fill="none" stroke="#00AEEF" stroke-width="3" stroke-miterlimit="10" points="1.5,198.171 1.5,1.583 398.167,1.583 
-	398.167,198.171 "/>
-<title>Group 4</title>
-<desc>Created with Sketch.</desc>
-<g>
-	<path fill="#00BBF1" d="M138.982,25.004V35.44h6.24v2.367h-9.056V25.004H138.982z"/>
-	<path fill="#00BBF1" d="M151.408,25.004v12.803h-2.815V25.004H151.408z"/>
-	<path fill="#00BBF1" d="M158.473,25.004l5.343,8.589h0.037v-8.589h2.635v12.803h-2.814l-5.326-8.572h-0.036v8.572h-2.635V25.004
-		H158.473z"/>
-	<path fill="#00BBF1" d="M173.552,25.004v5.308l5.003-5.308h3.515l-5.003,5.057l5.487,7.746h-3.532l-3.856-5.756l-1.613,1.632v4.124
-		h-2.814V25.004H173.552z"/>
-</g>
-<g>
-	<path fill="#00BBF1" d="M236.322,25.004V35.44h6.24v2.367h-9.056V25.004H236.322z"/>
-	<path fill="#00BBF1" d="M248.749,25.004v12.803h-2.817V25.004H248.749z"/>
-	<path fill="#00BBF1" d="M255.812,25.004l5.345,8.589h0.035v-8.589h2.636v12.803h-2.814l-5.325-8.572h-0.037v8.572h-2.635V25.004
-		H255.812z"/>
-	<path fill="#00BBF1" d="M270.893,25.004v5.308l5.003-5.308h3.516l-5.004,5.057l5.487,7.746h-3.532l-3.855-5.756l-1.614,1.632v4.124
-		h-2.814V25.004H270.893z"/>
-</g>
-<g>
-	<path fill="#00BBF1" d="M320.854,25.004V35.44h6.24v2.367h-9.056V25.004H320.854z"/>
-	<path fill="#00BBF1" d="M333.281,25.004v12.803h-2.816V25.004H333.281z"/>
-	<path fill="#00BBF1" d="M340.346,25.004l5.344,8.589h0.035v-8.589h2.636v12.803h-2.814l-5.325-8.572h-0.036v8.572h-2.636V25.004
-		H340.346z"/>
-	<path fill="#00BBF1" d="M355.425,25.004v5.308l5.003-5.308h3.516l-5.004,5.057l5.487,7.746h-3.532l-3.855-5.756l-1.614,1.632v4.124
-		h-2.814V25.004H355.425z"/>
-</g>
+
+<svg width="400px" height="200px" viewBox="0 0 400 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <polyline id="Shape" stroke="#00AEEF" stroke-width="3" fill="none" points="1.5 198.171 1.5 1.583 398.167 1.583 398.167 198.171"></polyline>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="138.982 25.004 138.982 35.44 145.222 35.44 145.222 37.807 136.166 37.807 136.166 25.004"></polygon>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="151.408 25.004 151.408 37.807 148.593 37.807 148.593 25.004"></polygon>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="158.473 25.004 163.816 33.593 163.853 33.593 163.853 25.004 166.488 25.004 166.488 37.807 163.674 37.807 158.348 29.235 158.312 29.235 158.312 37.807 155.677 37.807 155.677 25.004"></polygon>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="173.552 25.004 173.552 30.312 178.555 25.004 182.07 25.004 177.067 30.061 182.554 37.807 179.022 37.807 175.166 32.051 173.553 33.683 173.553 37.807 170.739 37.807 170.739 25.004"></polygon>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="236.322 25.004 236.322 35.44 242.562 35.44 242.562 37.807 233.506 37.807 233.506 25.004"></polygon>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="248.749 25.004 248.749 37.807 245.932 37.807 245.932 25.004"></polygon>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="255.812 25.004 261.157 33.593 261.192 33.593 261.192 25.004 263.828 25.004 263.828 37.807 261.014 37.807 255.689 29.235 255.652 29.235 255.652 37.807 253.017 37.807 253.017 25.004"></polygon>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="270.893 25.004 270.893 30.312 275.896 25.004 279.412 25.004 274.408 30.061 279.895 37.807 276.363 37.807 272.508 32.051 270.894 33.683 270.894 37.807 268.08 37.807 268.08 25.004"></polygon>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="320.854 25.004 320.854 35.44 327.094 35.44 327.094 37.807 318.038 37.807 318.038 25.004"></polygon>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="333.281 25.004 333.281 37.807 330.465 37.807 330.465 25.004"></polygon>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="340.346 25.004 345.69 33.593 345.725 33.593 345.725 25.004 348.361 25.004 348.361 37.807 345.547 37.807 340.222 29.235 340.186 29.235 340.186 37.807 337.55 37.807 337.55 25.004"></polygon>
+    <polygon id="Shape" stroke="none" fill="#00BBF1" fill-rule="evenodd" points="355.425 25.004 355.425 30.312 360.428 25.004 363.944 25.004 358.94 30.061 364.427 37.807 360.895 37.807 357.04 32.051 355.426 33.683 355.426 37.807 352.612 37.807 352.612 25.004"></polygon>
 </svg>
