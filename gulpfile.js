@@ -6,10 +6,10 @@ Steps:
 1. Install gulp globally:
 npm install --global gulp
 2. Type the following after navigating in your project folder:
-npm install gulp gulp-util gulp-sass gulp-uglify gulp-rename gulp-minify-css gulp-notify gulp-concat gulp-plumber browser-sync --save-dev
+npm install gulp gulp-util gulp-sass gulp-uglify gulp-rename gulp-clean-css gulp-notify gulp-concat gulp-plumber browser-sync --save-dev
 3. Move this file in your project folder
 4. Setup your vhosts or just use static server (see 'Prepare Browser-sync for localhost' below)
-5. Type 'Gulp' and ster developing
+5. Type 'Gulp' and start developing
 */
 
 /* Needed gulp config */
@@ -18,7 +18,7 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var notify = require('gulp-notify');
-var minifycss = require('gulp-minify-css');
+var cleanCSS = require('gulp-clean-css');
 var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync');
@@ -48,7 +48,7 @@ gulp.task('sass', function () {
     }))
     .pipe(gulp.dest('css'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(minifycss())
+    .pipe(cleanCSS())
     .pipe(gulp.dest('css'))
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
